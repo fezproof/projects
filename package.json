@@ -1,0 +1,17 @@
+{
+  "name": "@fez/projects",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fezproof/projects.git"
+  },
+  "author": "ben.chidlow@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fezproof/projects/issues"
+  },
+  "homepage": "https://github.com/fezproof/projects#readme"
+}

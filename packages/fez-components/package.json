@@ -37,6 +37,7 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "@types/react": "^16.9.44",
+    "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
     "react": "^16.13.1",
@@ -44,11 +45,12 @@
     "rollup": "^2.23.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-typescript2": "^0.27.1",
+    "styled-components": "^5.1.1",
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
     "react": ">=16.13.1",
-    "react-dom": ">=16.13.1"
-  },
-  "dependencies": {}
+    "react-dom": ">=16.13.1",
+    "styled-components": ">=5.1.1"
+  }
 }

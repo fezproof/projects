@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "lerna run test",
+    "test:watch": "lerna run test:watch --parallel",
     "build": "lerna run build"
   },
   "repository": {

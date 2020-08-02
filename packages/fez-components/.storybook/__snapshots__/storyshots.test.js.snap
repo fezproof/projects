@@ -1,0 +1,537 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Scroller Constrained Max Height 1`] = `
+<div
+  className="sc-AxiKw hlaTLo"
+>
+  <div
+    className="sc-AxjAm iQoRkY"
+  >
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+    <div
+      className="sc-AxirZ oyRuF"
+    >
+      <p>
+        This is a div
+      </p>
+      <p>
+        This has some stuff in it
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Scroller Max Height 1`] = `
+<div
+  className="sc-AxjAm dhUcpg"
+  maxHeight="20rem"
+>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Scroller No Max Height 1`] = `
+<div
+  className="sc-AxjAm iQoRkY"
+>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+  <div
+    className="sc-AxirZ oyRuF"
+  >
+    <p>
+      This is a div
+    </p>
+    <p>
+      This has some stuff in it
+    </p>
+  </div>
+</div>
+`;

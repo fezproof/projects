@@ -1,7 +1,8 @@
 import React, { FC } from "react";
+import BasicLayout from "../layouts/BasicLayout";
 
 const Index: FC = () => {
-  return <div>this me!</div>;
+  return <BasicLayout title="Home">this me!</BasicLayout>;
 };
 
 export default Index;

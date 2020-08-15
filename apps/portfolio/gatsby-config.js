@@ -21,8 +21,8 @@ module.exports = {
         name: `Ben Chidlows Portfolio`,
         short_name: `BenC Portfolio`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#060606`,
+        theme_color: `#61DAFB`,
         display: `standalone`,
         icon: `src/images/icon.svg`, // This path is relative to the root of the site.
       },
@@ -33,5 +33,6 @@ module.exports = {
       //   precachePages: [`/about-us/`, `/projects/*`],
       // },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 };

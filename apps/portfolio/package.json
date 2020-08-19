@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@adobe/react-spectrum": "^3.1.0",
+    "@spectrum-icons/illustrations": "^3.1.0",
+    "@spectrum-icons/workflow": "^3.1.0",
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.24.41",
     "gatsby-plugin-manifest": "^2.4.23",

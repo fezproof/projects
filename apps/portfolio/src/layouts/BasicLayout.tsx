@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Helmet } from "react-helmet";
 import { Provider, defaultTheme } from "@adobe/react-spectrum";
 import { createGlobalStyle } from "styled-components";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -20,7 +21,7 @@ const BasicLayout: FC<BasicLayoutProps> = ({ children, title }) => {
       <Helmet defer={false}>
         <title>{title}</title>
       </Helmet>
-      {children}
+      <ErrorBoundary>{children}</ErrorBoundary>
     </Provider>
   );
 };

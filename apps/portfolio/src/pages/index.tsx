@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from "react";
 import BasicLayout from "../layouts/BasicLayout";
-import { View, Grid, Header, Heading } from "@adobe/react-spectrum";
+import { View, Grid, Header, Heading, Footer } from "@adobe/react-spectrum";
 
 const Index: FC = () => {
   return (
@@ -12,14 +12,20 @@ const Index: FC = () => {
         height="100%"
         gap="size-100"
       >
-        <View backgroundColor="celery-400" gridArea="header">
+        <View borderWidth="thin" borderColor="celery-400" gridArea="header">
           <Header>
             <Heading level={1}>Ben Chidlow</Heading>
           </Header>
         </View>
-        <View backgroundColor="blue-400" gridArea="sidebar" />
-        <View backgroundColor="purple-400" gridArea="content" />
-        <View backgroundColor="magenta-400" gridArea="footer" />
+        <View borderWidth="thin" borderColor="blue-400" gridArea="sidebar">
+          <nav>This is a nav</nav>
+        </View>
+        <View borderWidth="thin" borderColor="purple-400" gridArea="content">
+          <main>This is a main</main>
+        </View>
+        <View borderWidth="thin" borderColor="magenta-400" gridArea="footer">
+          <Footer>This is a footer</Footer>
+        </View>
       </Grid>
     </BasicLayout>
   );

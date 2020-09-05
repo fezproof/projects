@@ -7,6 +7,8 @@ import ErrorBoundary from "../components/ErrorBoundary";
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 `;
 
@@ -16,10 +18,17 @@ interface BasicLayoutProps {
 
 const BasicLayout: FC<BasicLayoutProps> = ({ children, title }) => {
   return (
-    <Provider theme={defaultTheme} defaultColorScheme="dark" height="100vh">
+    <Provider
+      theme={defaultTheme}
+      defaultColorScheme="dark"
+      colorScheme="dark"
+      height="100vh"
+      position="relative"
+    >
       <GlobalStyle />
       <Helmet defer={false}>
         <title>{title}</title>
+        <html lang="en"></html>
       </Helmet>
       <ErrorBoundary>{children}</ErrorBoundary>
     </Provider>

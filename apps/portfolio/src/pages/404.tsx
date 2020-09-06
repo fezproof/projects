@@ -10,7 +10,10 @@ import NotFound from "@spectrum-icons/illustrations/NotFound";
 
 const PageNotFound: FC = () => {
   return (
-    <BasicLayout title="No page found">
+    <BasicLayout
+      title="No page found"
+      description="This page was not found. Try visting another page on this site to find out more about ben chidlow"
+    >
       <Flex
         direction="column"
         justifyContent="center"

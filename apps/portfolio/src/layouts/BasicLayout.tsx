@@ -14,9 +14,14 @@ const GlobalStyle = createGlobalStyle`
 
 interface BasicLayoutProps {
   title: string;
+  description: string;
 }
 
-const BasicLayout: FC<BasicLayoutProps> = ({ children, title }) => {
+const BasicLayout: FC<BasicLayoutProps> = ({
+  children,
+  title,
+  description,
+}) => {
   return (
     <Provider
       theme={defaultTheme}
@@ -29,6 +34,7 @@ const BasicLayout: FC<BasicLayoutProps> = ({ children, title }) => {
       <Helmet defer={false}>
         <title>{title}</title>
         <html lang="en"></html>
+        <meta name="description" content={description} />
       </Helmet>
       <ErrorBoundary>{children}</ErrorBoundary>
     </Provider>

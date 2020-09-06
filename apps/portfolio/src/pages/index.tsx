@@ -4,7 +4,10 @@ import { View, Grid, Header, Heading, Footer } from "@adobe/react-spectrum";
 
 const Index: FC = () => {
   return (
-    <BasicLayout title="Home">
+    <BasicLayout
+      title="Home"
+      description="Ben Chidlow is an aspiring full stack developer based in Perth Western Australia"
+    >
       <Grid
         areas={["header  header", "sidebar content", "footer  footer"]}
         columns={["1fr", "3fr"]}

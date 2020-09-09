@@ -1,12 +1,7 @@
 import React from "react";
-import {
-  Flex,
-  IllustratedMessage,
-  Heading,
-  Content,
-} from "@adobe/react-spectrum";
 
 import Error from "@spectrum-icons/illustrations/Error";
+import Centeriser from "./Centeriser";
 
 interface ErrorBoundaryState {
   error: Error;
@@ -33,18 +28,13 @@ class ErrorBoundary extends React.Component<{}, ErrorBoundaryState> {
     if (this.state.errorInfo) {
       // Error path
       return (
-        <Flex
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-          height="100%"
-        >
-          <IllustratedMessage>
+        <Centeriser>
+          <main>
             <Error />
-            <Heading>Something went wrong.</Heading>
-            <Content>{this.state.error && this.state.error.toString()}</Content>
-          </IllustratedMessage>
-        </Flex>
+            <h1>Something went wrong.</h1>
+            <div>{this.state.error && this.state.error.toString()}</div>
+          </main>
+        </Centeriser>
       );
     }
     // Normally, just render children

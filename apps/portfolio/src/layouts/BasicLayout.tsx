@@ -1,14 +1,16 @@
 import React, { FC } from "react";
 import { Helmet } from "react-helmet";
-import { Provider, defaultTheme } from "@adobe/react-spectrum";
 import { createGlobalStyle } from "styled-components";
 import ErrorBoundary from "../components/ErrorBoundary";
+import { Link } from "gatsby";
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-size: 1rem;
     line-height: 1.5rem;
+    background-color: #282828;
+    color: #ffffff;
   }
 `;
 
@@ -23,21 +25,17 @@ const BasicLayout: FC<BasicLayoutProps> = ({
   description,
 }) => {
   return (
-    <Provider
-      theme={defaultTheme}
-      defaultColorScheme="dark"
-      colorScheme="dark"
-      height="100vh"
-      position="relative"
-    >
+    <div>
       <GlobalStyle />
       <Helmet defer={false}>
         <title>{title}</title>
         <html lang="en"></html>
         <meta name="description" content={description} />
       </Helmet>
+      <Link to="/">Home</Link>
+      <Link to="/inspo">Inspo</Link>
       <ErrorBoundary>{children}</ErrorBoundary>
-    </Provider>
+    </div>
   );
 };
 

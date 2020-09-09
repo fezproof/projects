@@ -1,12 +1,8 @@
 import React, { FC } from "react";
 import BasicLayout from "../layouts/BasicLayout";
-import {
-  Flex,
-  IllustratedMessage,
-  Heading,
-  Content,
-} from "@adobe/react-spectrum";
+
 import NotFound from "@spectrum-icons/illustrations/NotFound";
+import Centeriser from "../components/Centeriser";
 
 const PageNotFound: FC = () => {
   return (
@@ -14,21 +10,16 @@ const PageNotFound: FC = () => {
       title="No page found"
       description="This page was not found. Try visting another page on this site to find out more about ben chidlow"
     >
-      <Flex
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-        height="100%"
-      >
-        <IllustratedMessage>
+      <Centeriser>
+        <main>
           <NotFound />
-          <Heading>Error 404: Page not found</Heading>
-          <Content>
+          <h1>Error 404: Page not found</h1>
+          <div>
             This page isn't available. Try checking the URL or visit a different
             page.
-          </Content>
-        </IllustratedMessage>
-      </Flex>
+          </div>
+        </main>
+      </Centeriser>
     </BasicLayout>
   );
 };

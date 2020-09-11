@@ -3,16 +3,7 @@ import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import ErrorBoundary from "../components/ErrorBoundary";
 import { Link } from "gatsby";
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    background-color: #282828;
-    color: #ffffff;
-  }
-`;
+import GlobalTheme from "./GlobalTheme";
 
 interface BasicLayoutProps {
   title: string;
@@ -25,8 +16,7 @@ const BasicLayout: FC<BasicLayoutProps> = ({
   description,
 }) => {
   return (
-    <div>
-      <GlobalStyle />
+    <GlobalTheme>
       <Helmet defer={false}>
         <title>{title}</title>
         <html lang="en"></html>
@@ -35,7 +25,7 @@ const BasicLayout: FC<BasicLayoutProps> = ({
       <Link to="/">Home</Link>
       <Link to="/inspo">Inspo</Link>
       <ErrorBoundary>{children}</ErrorBoundary>
-    </div>
+    </GlobalTheme>
   );
 };
 

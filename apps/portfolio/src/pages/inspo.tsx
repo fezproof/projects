@@ -20,6 +20,7 @@ const query = graphql`
               ...GatsbyImageSharpFixed
             }
           }
+          publicURL
         }
       }
     }
@@ -45,7 +46,7 @@ const imageVariants = {
 const Container = styled(motion.main)`
   display: grid;
   height: 100%;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   /* This is better for small screens, once min() is better supported */
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
   grid-gap: 1rem;
@@ -62,19 +63,19 @@ const ProgPosition = styled(motion.div)`
 
 const protaginistVariants: Variants = {
   enter: {
-    scale: 1,
-    left: "50%",
-    bottom: "45%",
-  },
-  visible: {
-    scale: [null, 1.5, 1],
-    left: [null, "40%", "20%"],
-    bottom: [null, "45%", "20%"],
+    scale: [1, 1.5, 1],
+    left: ["50%", "40%", "0%"],
+    bottom: ["45%", "45%", "0%"],
     transition: {
       ease: ["easeInOut", "linear"],
       duration: 0.5,
       times: [0, 0.3, 1],
     },
+  },
+  visible: {
+    scale: 1,
+    left: "0%",
+    bottom: "0%",
   },
   retreat: {
     scale: 1,
@@ -100,22 +101,23 @@ const Inspo: FC = () => {
         animate="visible"
         exit="hidden"
       >
-        {data.allFile.edges.map(({ node }) => (
-          <MotionImage
-            key={node.absolutePath}
-            fixed={node.childImageSharp.fixed}
-            variants={imageVariants}
-          />
-        ))}
+        {data.allFile.edges.map(({ node }) =>
+          node.childImageSharp ? (
+            <MotionImage
+              key={node.absolutePath}
+              fixed={node.childImageSharp.fixed}
+              variants={imageVariants}
+            />
+          ) : (
+            <motion.img
+              key={node.absolutePath}
+              src={node.publicURL}
+              variants={imageVariants}
+            />
+          ),
+        )}
       </Container>
-      <ProgPosition
-        variants={protaginistVariants}
-        initial="enter"
-        animate="visible"
-        exit="retreat"
-      >
-        <Protaginist />
-      </ProgPosition>
+      <Protaginist />
     </BasicLayout>
   );
 };

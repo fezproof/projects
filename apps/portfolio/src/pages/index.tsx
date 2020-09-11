@@ -27,10 +27,11 @@ const protaginistVariants: Variants = {
     scale: [1, 1, 0.8, 1],
     left: [null, "40%", "50%", "50%"],
     bottom: [null, "0%", "45%", "45%"],
+    filter: ["blur(0px)", "blur(0px)", "blur(8px)", "blur(0px)"],
     transition: {
       ease: ["easeInOut", "anticipate", "linear"],
       duration: 2,
-      times: [0, 0.4, 0.7, 1],
+      times: [0, 0.2, 0.4, 1],
     },
   },
 };
@@ -41,15 +42,8 @@ const Index: FC = () => {
       title="Home"
       description="Ben Chidlow is an aspiring full stack developer based in Perth Western Australia"
     >
+      <Protaginist />
       <motion.h1 exit={{ opacity: 0 }}>This is a page</motion.h1>
-      <ProgPosition
-        variants={protaginistVariants}
-        initial="hidden"
-        animate="visible"
-        exit="attack"
-      >
-        <Protaginist />
-      </ProgPosition>
     </BasicLayout>
   );
 };

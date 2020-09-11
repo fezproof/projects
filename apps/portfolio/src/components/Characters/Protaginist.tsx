@@ -74,7 +74,7 @@ const Protaginist: FC = () => {
           animate="visible"
           exit="attack"
         >
-          <Prog />
+          <Prog stroke="white" />
         </Transform>
       </Sandbox>
     </PersonContainer>

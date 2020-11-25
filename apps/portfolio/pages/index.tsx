@@ -1,19 +1,18 @@
 import Head from 'next/head';
-import styles from 'styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to a pretty cool portfolio</h1>
+      <main>
+        <h1>Welcome to a pretty cool portfolio</h1>
       </main>
 
-      <footer className={styles.footer}>made by fezproof</footer>
+      <footer>made by fezproof</footer>
     </div>
   );
 }

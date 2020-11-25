@@ -1071,11 +1071,11 @@ __metadata:
   resolution: "@fez/projects@workspace:."
   dependencies:
     eslint: ^7.5.0
-    next: 10.0.3
     prettier: ^2.0.5
-    react: ^16.14.0
-    react-dom: ^16.14.0
     typescript: ^4.0.1
+  dependenciesMeta:
+    next@10.0.3:
+      unplugged: true
   languageName: unknown
   linkType: soft
 

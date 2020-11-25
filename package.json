@@ -19,14 +19,16 @@
   "homepage": "https://github.com/fezproof/projects#readme",
   "devDependencies": {
     "eslint": "^7.5.0",
-    "next": "10.0.3",
     "prettier": "^2.0.5",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
     "typescript": "^4.0.1"
   },
   "workspaces": [
     "packages/*",
     "apps/*"
-  ]
+  ],
+  "dependenciesMeta": {
+    "next@10.0.3": {
+      "unplugged": true
+    }
+  }
 }

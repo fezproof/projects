@@ -1,8 +1,0 @@
-{
-  "extends": "../../tsconfig",
-  "compilerOptions": {
-    "declarationDir": "dist",
-    "outDir": "dist"
-  },
-  "include": ["lib/**/*"]
-}

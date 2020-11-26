@@ -1,13 +1,8 @@
-import { Box, Button, Container, Grid, useColorMode } from '@chakra-ui/react';
+import { Center, Container, Heading, Link, VStack } from '@chakra-ui/react';
 import Head from 'next/head';
-import HomeHeader from 'src/components/headers/HomeHeader';
-import PrintHidden from 'src/components/helpers/PrintHidden';
-import HomeAside from 'src/components/HomeAside';
-import HomeMain from 'src/components/mains/HomeMain';
+import RouterLink from 'next/link';
 
 export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   return (
     <div>
       <Head>
@@ -19,34 +14,18 @@ export default function Home() {
         />
       </Head>
 
-      <PrintHidden>
-        <Button onClick={toggleColorMode} textTransform="uppercase">
-          toggle {colorMode === 'light' ? 'dark' : 'light'}
-        </Button>
-      </PrintHidden>
       <Container maxW="lg">
-        <Grid
-          templateAreas={`
-            "header header"
-            "aside main"
-            "aside main"
-            "footer footer"
-          `}
-          gridTemplateColumns="14rem auto"
-        >
-          <Box as="header" gridArea="header" p="1rem">
-            <HomeHeader />
-          </Box>
-          <Box as="aside" gridArea="aside" p="1rem">
-            <HomeAside />
-          </Box>
-          <Box as="main" gridArea="main" p="1rem">
-            <HomeMain />
-          </Box>
-          <Box as="footer" gridArea="footer" p="1rem">
-            Footer
-          </Box>
-        </Grid>
+        <Center py="3rem">
+          <VStack>
+            <Heading as="h1">Under Construction!</Heading>
+            <Heading as="h2" size="lg" mb="5rem">
+              Please check back later :)
+            </Heading>
+            <RouterLink href="/resume">
+              <Link>Resume</Link>
+            </RouterLink>
+          </VStack>
+        </Center>
       </Container>
     </div>
   );

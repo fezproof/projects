@@ -44,9 +44,7 @@ export default function Home() {
           <Box as="main" gridArea="main">
             <HomeMain />
           </Box>
-          <Box as="footer" gridArea="footer">
-            Footer
-          </Box>
+          <Box as="footer" gridArea="footer"></Box>
         </Grid>
       </Container>
     </div>

@@ -6865,7 +6865,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["next", [
         ["virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:10.0.3", {
-          "packageLocation": "./.yarn/$$virtual/next-virtual-e26378ccbb/0/cache/next-npm-10.0.3-642cd45c09-7b4a77f7c3.zip/node_modules/next/",
+          "packageLocation": "./.yarn/unplugged/next-virtual-e26378ccbb/node_modules/next/",
           "packageDependencies": [
             ["next", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:10.0.3"],
             ["@ampproject/toolbox-optimizer", "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:2.7.0-alpha.1"],

@@ -25,5 +25,10 @@
   "workspaces": [
     "packages/*",
     "apps/*"
-  ]
+  ],
+  "dependenciesMeta": {
+    "next@10.0.3": {
+      "unplugged": true
+    }
+  }
 }

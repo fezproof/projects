@@ -1073,6 +1073,9 @@ __metadata:
     eslint: ^7.5.0
     prettier: ^2.0.5
     typescript: ^4.0.1
+  dependenciesMeta:
+    next@10.0.3:
+      unplugged: true
   languageName: unknown
   linkType: soft
 

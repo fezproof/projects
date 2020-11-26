@@ -750,7 +750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/system@npm:1.0.1":
+"@chakra-ui/system@npm:1.0.1, @chakra-ui/system@npm:^1.0.1":
   version: 1.0.1
   resolution: "@chakra-ui/system@npm:1.0.1"
   dependencies:
@@ -5644,6 +5644,7 @@ fsevents@~2.1.2:
   dependencies:
     "@chakra-ui/icons": ^1.0.1
     "@chakra-ui/react": ^1.0.1
+    "@chakra-ui/system": ^1.0.1
     "@emotion/react": ^11.1.1
     "@emotion/styled": ^11.0.0
     "@types/node": ^14.14.10

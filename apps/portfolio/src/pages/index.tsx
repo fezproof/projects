@@ -11,10 +11,19 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Ben Chidlow - CV</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Resume for printing for Ben Chidlow"
+        />
       </Head>
 
+      <PrintHidden>
+        <Button onClick={toggleColorMode} textTransform="uppercase">
+          toggle {colorMode === 'light' ? 'dark' : 'light'}
+        </Button>
+      </PrintHidden>
       <Container maxW="lg">
         <Grid
           templateAreas={`
@@ -27,9 +36,6 @@ export default function Home() {
         >
           <Box as="header" gridArea="header" p="1rem">
             <HomeHeader />
-            <PrintHidden>
-              <Button onClick={toggleColorMode}>theme</Button>
-            </PrintHidden>
           </Box>
           <Box as="aside" gridArea="aside" p="1rem">
             <HomeAside />

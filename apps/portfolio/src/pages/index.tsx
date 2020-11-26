@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ben Chidlow - CV</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Ben Chidlow - Developer</title>
+        <link rel="icon" href="/favicon.png" />
         <meta
           name="description"
-          content="Resume for printing for Ben Chidlow"
+          content="Ben Chidlow's personal site. This includes his portfolio and resume"
         />
       </Head>
 

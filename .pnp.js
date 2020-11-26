@@ -39,6 +39,2706 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["portfolio", ["workspace:apps/portfolio"]]
     ],
     "fallbackPool": [
+      [
+        "@ampproject/toolbox-core",
+        "npm:2.6.1"
+      ],
+      [
+        "@ampproject/toolbox-optimizer",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:2.7.0-alpha.1"
+      ],
+      [
+        "@ampproject/toolbox-runtime-version",
+        "npm:2.7.0-alpha.1"
+      ],
+      [
+        "@ampproject/toolbox-script-csp",
+        "npm:2.5.4"
+      ],
+      [
+        "@ampproject/toolbox-validator-rules",
+        "npm:2.5.4"
+      ],
+      [
+        "@babel/code-frame",
+        "npm:7.10.4"
+      ],
+      [
+        "@babel/helper-module-imports",
+        "npm:7.12.5"
+      ],
+      [
+        "@babel/helper-plugin-utils",
+        "npm:7.10.4"
+      ],
+      [
+        "@babel/helper-validator-identifier",
+        "npm:7.10.4"
+      ],
+      [
+        "@babel/highlight",
+        "npm:7.10.4"
+      ],
+      [
+        "@babel/plugin-syntax-jsx",
+        "virtual:3f1f69369aa7a13a0febce1ec894e615df526dab549cab87ec6b9ffff5a91e58eeb486c28ceed48b67c177409ec8f7d45500e748b96c2b8500ea720a7d035706#npm:7.12.1"
+      ],
+      [
+        "@babel/runtime",
+        "npm:7.12.5"
+      ],
+      [
+        "@babel/types",
+        "npm:7.12.7"
+      ],
+      [
+        "@chakra-ui/accordion",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/alert",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/avatar",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/breadcrumb",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/button",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/checkbox",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/clickable",
+        "virtual:6f9618903320c4802e7dff68c0d1f17abfc27a2b0e79d1c188280ff7a5cc3ebc2417da0cf28ff92ba68c83ff76068df7ebd57859920fdc7216aaabe9eed0e4f1#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/close-button",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/color-mode",
+        "virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/control-box",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/counter",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/css-reset",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.0"
+      ],
+      [
+        "@chakra-ui/descendant",
+        "virtual:f362047dfb3951026e2ff97df7b9578dcc3d25227c134b59e214be1fe8b101efd466a14c658820b60ebc31fb6a06a42745f62c48205256a4b1cd960a17d1322b#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/editable",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/focus-lock",
+        "virtual:b0ebc65ceb387b0e44554718c406c0e28c4fadd384a4ded795f3f3a12c7f115f9f961fbd1ebb61bf9df65e781834f03d8726a7563453bebbb2db8aede05e6024#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/form-control",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/hooks",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/icon",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/icons",
+        "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/image",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/input",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/layout",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/live-region",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/media-query",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/menu",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/modal",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.1.0"
+      ],
+      [
+        "@chakra-ui/number-input",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/pin-input",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/popover",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/popper",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/portal",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/progress",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/radio",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/react",
+        "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/select",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/skeleton",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/slider",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/spinner",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/stat",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/styled-system",
+        "virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.1.0"
+      ],
+      [
+        "@chakra-ui/switch",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/system",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/tabs",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/tag",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/textarea",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/theme",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.1.0"
+      ],
+      [
+        "@chakra-ui/theme-tools",
+        "virtual:288a8f05175c16b650947a14f7619660f262debec03e6342a402c584925f7ae0602ab7b1428a1b553c82d98f1e969a311ecb11c65b4a36375c99f16896cd6790#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/toast",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/tooltip",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/transition",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/utils",
+        "virtual:7a90136c630a1b318faff04ede8a4e0f1abaa11892c4fcae8009842614acfea0c4c5584154e7d9111fabdd3cff2b62fd79273b09ff857bd9a93d6c0c858560cd#npm:1.0.1"
+      ],
+      [
+        "@chakra-ui/visually-hidden",
+        "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"
+      ],
+      [
+        "@emotion/babel-plugin",
+        "virtual:5bc9f7e11da7f84725a39ab3c60c0a0793e228562d034fb629b4da495a69243f10ccb0c6375d3eaa6e564bfd02b305b0a93354b598dedb5959188c0a6456e840#npm:11.0.0"
+      ],
+      [
+        "@emotion/cache",
+        "npm:11.0.0"
+      ],
+      [
+        "@emotion/hash",
+        "npm:0.8.0"
+      ],
+      [
+        "@emotion/is-prop-valid",
+        "npm:1.0.0"
+      ],
+      [
+        "@emotion/memoize",
+        "npm:0.7.4"
+      ],
+      [
+        "@emotion/react",
+        "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"
+      ],
+      [
+        "@emotion/serialize",
+        "npm:1.0.0"
+      ],
+      [
+        "@emotion/sheet",
+        "npm:1.0.0"
+      ],
+      [
+        "@emotion/styled",
+        "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"
+      ],
+      [
+        "@emotion/unitless",
+        "npm:0.7.5"
+      ],
+      [
+        "@emotion/utils",
+        "npm:1.0.0"
+      ],
+      [
+        "@emotion/weak-memoize",
+        "npm:0.2.5"
+      ],
+      [
+        "@eslint/eslintrc",
+        "npm:0.2.1"
+      ],
+      [
+        "@hapi/accept",
+        "npm:5.0.1"
+      ],
+      [
+        "@hapi/boom",
+        "npm:9.1.0"
+      ],
+      [
+        "@hapi/hoek",
+        "npm:9.1.0"
+      ],
+      [
+        "@next/env",
+        "npm:10.0.3"
+      ],
+      [
+        "@next/polyfill-module",
+        "npm:10.0.3"
+      ],
+      [
+        "@next/react-dev-overlay",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:10.0.3"
+      ],
+      [
+        "@next/react-refresh-utils",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:10.0.3"
+      ],
+      [
+        "@popperjs/core",
+        "npm:2.4.4"
+      ],
+      [
+        "@reach/alert",
+        "virtual:82ee5b8958fd09ead0040ed71ea9b72c8d071ea98d6a410c2df51cd3db20db2d6e8ecbdfb6d0ec658688f6f6b04d8f08de85f9e99dccf80b67cd62722cb554e2#npm:0.11.0"
+      ],
+      [
+        "@reach/auto-id",
+        "virtual:0e4b1e7a8ee4d38672b06fbe9e98b076e493cb070d4a18dd0fee915e6776041b6437628e493304efdd5452547fd52bc86c68a75ee9894d1d21cc87a06dac2a0f#npm:0.11.0"
+      ],
+      [
+        "@reach/utils",
+        "virtual:18f717887c29b617b56cd50078b10cac907a8b9c7e45eb6764c47679183d7d811c57af60cc38d3e027a66a0b19cb7b448f59d30baa6ccbc8049aa565184774a7#npm:0.11.0"
+      ],
+      [
+        "@reach/visually-hidden",
+        "virtual:0615fe8e8055dc12381f4178ac749a3bf4842b1ef0ca6b409bcae9b7c4bd00ad4db55f30fdba76b4f35b19e46022bac66c798ddd81bcc12918cd7864d86dcdcc#npm:0.11.0"
+      ],
+      [
+        "@styled-system/core",
+        "npm:5.1.2"
+      ],
+      [
+        "@types/json-schema",
+        "npm:7.0.6"
+      ],
+      [
+        "@types/lodash",
+        "npm:4.14.165"
+      ],
+      [
+        "@types/lodash.mergewith",
+        "npm:4.6.6"
+      ],
+      [
+        "@types/node",
+        "npm:14.14.10"
+      ],
+      [
+        "@types/object-assign",
+        "npm:4.0.30"
+      ],
+      [
+        "@types/parse-json",
+        "npm:4.0.0"
+      ],
+      [
+        "@types/prop-types",
+        "npm:15.7.3"
+      ],
+      [
+        "@types/react",
+        "npm:16.14.2"
+      ],
+      [
+        "@types/tinycolor2",
+        "npm:1.4.2"
+      ],
+      [
+        "@types/warning",
+        "npm:3.0.0"
+      ],
+      [
+        "@webassemblyjs/ast",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/floating-point-hex-parser",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/helper-api-error",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/helper-buffer",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/helper-code-frame",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/helper-fsm",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/helper-module-context",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/helper-wasm-bytecode",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/helper-wasm-section",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/ieee754",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/leb128",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/utf8",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/wasm-edit",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/wasm-gen",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/wasm-opt",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/wasm-parser",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/wast-parser",
+        "npm:1.9.0"
+      ],
+      [
+        "@webassemblyjs/wast-printer",
+        "npm:1.9.0"
+      ],
+      [
+        "@xtuc/ieee754",
+        "npm:1.2.0"
+      ],
+      [
+        "@xtuc/long",
+        "npm:4.2.2"
+      ],
+      [
+        "abbrev",
+        "npm:1.1.1"
+      ],
+      [
+        "abort-controller",
+        "npm:3.0.0"
+      ],
+      [
+        "acorn",
+        "npm:7.4.1"
+      ],
+      [
+        "acorn-jsx",
+        "virtual:d2b7d87b7d1b24ae28c976e6a4dd1f4502c0b4861c48ac890edb4bef9b304b0f14bb5b927b0e2264534c1a0de7bfcddcb87164733cca942d507282121e821e10#npm:5.3.1"
+      ],
+      [
+        "adjust-sourcemap-loader",
+        "npm:3.0.0"
+      ],
+      [
+        "agent-base",
+        "npm:6.0.2"
+      ],
+      [
+        "ajv",
+        "npm:6.12.6"
+      ],
+      [
+        "ajv-errors",
+        "virtual:2b49db17d1e4e8854e6e7543c07eb7bc19ec9da65a1b99b9cb28e764846d419e5ecd6e057ad65249f2b928862ffd70dbf8a7c79643ccdd7c1c40cab5b59aa03f#npm:1.0.1"
+      ],
+      [
+        "ajv-keywords",
+        "virtual:f84d18c473fad3c01e1cf352f81ad13de804ca40da5bf6e752464a2e78dcb097ad579b06da5ff33a55ba9957fb9c74909b99fc5e215420a3f9b5dc87ad71363b#npm:3.5.2"
+      ],
+      [
+        "ally.js",
+        "npm:1.4.1"
+      ],
+      [
+        "anser",
+        "npm:1.4.9"
+      ],
+      [
+        "ansi-colors",
+        "npm:4.1.1"
+      ],
+      [
+        "ansi-regex",
+        "npm:5.0.0"
+      ],
+      [
+        "ansi-styles",
+        "npm:3.2.1"
+      ],
+      [
+        "anymatch",
+        "npm:3.1.1"
+      ],
+      [
+        "aproba",
+        "npm:1.2.0"
+      ],
+      [
+        "are-we-there-yet",
+        "npm:1.1.5"
+      ],
+      [
+        "argparse",
+        "npm:1.0.10"
+      ],
+      [
+        "aria-hidden",
+        "npm:1.1.1"
+      ],
+      [
+        "arity-n",
+        "npm:1.0.4"
+      ],
+      [
+        "arr-diff",
+        "npm:4.0.0"
+      ],
+      [
+        "arr-flatten",
+        "npm:1.1.0"
+      ],
+      [
+        "arr-union",
+        "npm:3.1.0"
+      ],
+      [
+        "array-unique",
+        "npm:0.3.2"
+      ],
+      [
+        "asn1",
+        "npm:0.2.4"
+      ],
+      [
+        "asn1.js",
+        "npm:5.4.1"
+      ],
+      [
+        "assert",
+        "npm:1.5.0"
+      ],
+      [
+        "assert-plus",
+        "npm:1.0.0"
+      ],
+      [
+        "assign-symbols",
+        "npm:1.0.0"
+      ],
+      [
+        "ast-types",
+        "npm:0.13.2"
+      ],
+      [
+        "astral-regex",
+        "npm:1.0.0"
+      ],
+      [
+        "async-each",
+        "npm:1.0.3"
+      ],
+      [
+        "asynckit",
+        "npm:0.4.0"
+      ],
+      [
+        "atob",
+        "npm:2.1.2"
+      ],
+      [
+        "aws-sign2",
+        "npm:0.7.0"
+      ],
+      [
+        "aws4",
+        "npm:1.11.0"
+      ],
+      [
+        "babel-plugin-macros",
+        "npm:2.8.0"
+      ],
+      [
+        "babel-plugin-syntax-jsx",
+        "npm:6.18.0"
+      ],
+      [
+        "babel-plugin-transform-define",
+        "npm:2.0.0"
+      ],
+      [
+        "babel-plugin-transform-react-remove-prop-types",
+        "npm:0.4.24"
+      ],
+      [
+        "balanced-match",
+        "npm:1.0.0"
+      ],
+      [
+        "base",
+        "npm:0.11.2"
+      ],
+      [
+        "base64-js",
+        "npm:1.5.1"
+      ],
+      [
+        "bcrypt-pbkdf",
+        "npm:1.0.2"
+      ],
+      [
+        "big.js",
+        "npm:5.2.2"
+      ],
+      [
+        "binary-extensions",
+        "npm:2.1.0"
+      ],
+      [
+        "bindings",
+        "npm:1.5.0"
+      ],
+      [
+        "bl",
+        "npm:4.0.3"
+      ],
+      [
+        "bluebird",
+        "npm:3.7.2"
+      ],
+      [
+        "bn.js",
+        "npm:4.11.9"
+      ],
+      [
+        "brace-expansion",
+        "npm:1.1.11"
+      ],
+      [
+        "braces",
+        "npm:2.3.2"
+      ],
+      [
+        "brorand",
+        "npm:1.1.0"
+      ],
+      [
+        "browserify-aes",
+        "npm:1.2.0"
+      ],
+      [
+        "browserify-cipher",
+        "npm:1.0.1"
+      ],
+      [
+        "browserify-des",
+        "npm:1.0.2"
+      ],
+      [
+        "browserify-rsa",
+        "npm:4.1.0"
+      ],
+      [
+        "browserify-sign",
+        "npm:4.2.1"
+      ],
+      [
+        "browserify-zlib",
+        "npm:0.2.0"
+      ],
+      [
+        "browserslist",
+        "npm:4.14.6"
+      ],
+      [
+        "buffer",
+        "npm:5.6.0"
+      ],
+      [
+        "buffer-from",
+        "npm:1.1.1"
+      ],
+      [
+        "buffer-xor",
+        "npm:1.0.3"
+      ],
+      [
+        "builtin-status-codes",
+        "npm:3.0.0"
+      ],
+      [
+        "bytes",
+        "npm:3.1.0"
+      ],
+      [
+        "cacache",
+        "npm:12.0.4"
+      ],
+      [
+        "cache-base",
+        "npm:1.0.1"
+      ],
+      [
+        "callsites",
+        "npm:3.1.0"
+      ],
+      [
+        "camelcase",
+        "npm:6.2.0"
+      ],
+      [
+        "caniuse-lite",
+        "npm:1.0.30001161"
+      ],
+      [
+        "caseless",
+        "npm:0.12.0"
+      ],
+      [
+        "chalk",
+        "npm:2.4.2"
+      ],
+      [
+        "chokidar",
+        "npm:3.4.3"
+      ],
+      [
+        "chownr",
+        "npm:1.1.4"
+      ],
+      [
+        "chrome-trace-event",
+        "npm:1.0.2"
+      ],
+      [
+        "cipher-base",
+        "npm:1.0.4"
+      ],
+      [
+        "class-utils",
+        "npm:0.3.6"
+      ],
+      [
+        "classnames",
+        "npm:2.2.6"
+      ],
+      [
+        "code-point-at",
+        "npm:1.1.0"
+      ],
+      [
+        "collection-visit",
+        "npm:1.0.0"
+      ],
+      [
+        "color",
+        "npm:3.1.3"
+      ],
+      [
+        "color-convert",
+        "npm:1.9.3"
+      ],
+      [
+        "color-name",
+        "npm:1.1.4"
+      ],
+      [
+        "color-string",
+        "npm:1.5.4"
+      ],
+      [
+        "colorette",
+        "npm:1.2.1"
+      ],
+      [
+        "combined-stream",
+        "npm:1.0.8"
+      ],
+      [
+        "commander",
+        "npm:2.20.3"
+      ],
+      [
+        "commondir",
+        "npm:1.0.1"
+      ],
+      [
+        "component-emitter",
+        "npm:1.3.0"
+      ],
+      [
+        "components",
+        "workspace:packages/components"
+      ],
+      [
+        "compose-function",
+        "npm:3.0.3"
+      ],
+      [
+        "compute-scroll-into-view",
+        "npm:1.0.14"
+      ],
+      [
+        "concat-map",
+        "npm:0.0.1"
+      ],
+      [
+        "concat-stream",
+        "npm:1.6.2"
+      ],
+      [
+        "console-browserify",
+        "npm:1.2.0"
+      ],
+      [
+        "console-control-strings",
+        "npm:1.1.0"
+      ],
+      [
+        "constants-browserify",
+        "npm:1.0.0"
+      ],
+      [
+        "convert-source-map",
+        "npm:1.7.0"
+      ],
+      [
+        "copy-concurrently",
+        "npm:1.0.5"
+      ],
+      [
+        "copy-descriptor",
+        "npm:0.1.1"
+      ],
+      [
+        "copy-to-clipboard",
+        "npm:3.3.1"
+      ],
+      [
+        "core-util-is",
+        "npm:1.0.2"
+      ],
+      [
+        "cosmiconfig",
+        "npm:6.0.0"
+      ],
+      [
+        "create-ecdh",
+        "npm:4.0.4"
+      ],
+      [
+        "create-hash",
+        "npm:1.2.0"
+      ],
+      [
+        "create-hmac",
+        "npm:1.1.7"
+      ],
+      [
+        "cross-fetch",
+        "npm:3.0.5"
+      ],
+      [
+        "cross-spawn",
+        "npm:7.0.3"
+      ],
+      [
+        "crypto-browserify",
+        "npm:3.12.0"
+      ],
+      [
+        "css",
+        "npm:2.2.4"
+      ],
+      [
+        "css-box-model",
+        "npm:1.2.1"
+      ],
+      [
+        "css-get-unit",
+        "npm:1.0.1"
+      ],
+      [
+        "css-loader",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:4.3.0"
+      ],
+      [
+        "css.escape",
+        "npm:1.5.1"
+      ],
+      [
+        "cssesc",
+        "npm:3.0.0"
+      ],
+      [
+        "cssnano-preset-simple",
+        "npm:1.2.0"
+      ],
+      [
+        "cssnano-simple",
+        "npm:1.2.0"
+      ],
+      [
+        "csstype",
+        "npm:3.0.5"
+      ],
+      [
+        "cyclist",
+        "npm:1.0.1"
+      ],
+      [
+        "d",
+        "npm:1.0.1"
+      ],
+      [
+        "dashdash",
+        "npm:1.14.1"
+      ],
+      [
+        "data-uri-to-buffer",
+        "npm:3.0.0"
+      ],
+      [
+        "debug",
+        "virtual:88318143fb6d80d1f55c54ae799fe6cfcf29c86ca9b9dae7a485ec5bdb22c3a20f79119854bb9696c57b5a03879e8671e3e9d39fcd8ca2cec3e6655f73233a79#npm:4.3.1"
+      ],
+      [
+        "decode-uri-component",
+        "npm:0.2.0"
+      ],
+      [
+        "decompress-response",
+        "npm:4.2.1"
+      ],
+      [
+        "deep-extend",
+        "npm:0.6.0"
+      ],
+      [
+        "deep-is",
+        "npm:0.1.3"
+      ],
+      [
+        "define-property",
+        "npm:0.2.5"
+      ],
+      [
+        "delayed-stream",
+        "npm:1.0.0"
+      ],
+      [
+        "delegates",
+        "npm:1.0.0"
+      ],
+      [
+        "depd",
+        "npm:1.1.2"
+      ],
+      [
+        "dequal",
+        "npm:2.0.2"
+      ],
+      [
+        "des.js",
+        "npm:1.0.1"
+      ],
+      [
+        "detect-libc",
+        "npm:1.0.3"
+      ],
+      [
+        "detect-node-es",
+        "npm:1.0.0"
+      ],
+      [
+        "diffie-hellman",
+        "npm:5.0.3"
+      ],
+      [
+        "doctrine",
+        "npm:3.0.0"
+      ],
+      [
+        "dom-serializer",
+        "npm:1.0.1"
+      ],
+      [
+        "domain-browser",
+        "npm:1.2.0"
+      ],
+      [
+        "domelementtype",
+        "npm:2.0.2"
+      ],
+      [
+        "domhandler",
+        "npm:3.0.0"
+      ],
+      [
+        "domutils",
+        "npm:2.1.0"
+      ],
+      [
+        "duplexify",
+        "npm:3.7.1"
+      ],
+      [
+        "ecc-jsbn",
+        "npm:0.1.2"
+      ],
+      [
+        "electron-to-chromium",
+        "npm:1.3.607"
+      ],
+      [
+        "elliptic",
+        "npm:6.5.3"
+      ],
+      [
+        "emoji-regex",
+        "npm:7.0.3"
+      ],
+      [
+        "emojis-list",
+        "npm:3.0.0"
+      ],
+      [
+        "end-of-stream",
+        "npm:1.4.4"
+      ],
+      [
+        "enhanced-resolve",
+        "npm:4.3.0"
+      ],
+      [
+        "enquirer",
+        "npm:2.3.6"
+      ],
+      [
+        "entities",
+        "npm:2.1.0"
+      ],
+      [
+        "env-paths",
+        "npm:2.2.0"
+      ],
+      [
+        "errno",
+        "npm:0.1.7"
+      ],
+      [
+        "error-ex",
+        "npm:1.3.2"
+      ],
+      [
+        "es5-ext",
+        "npm:0.10.53"
+      ],
+      [
+        "es6-iterator",
+        "npm:2.0.3"
+      ],
+      [
+        "es6-symbol",
+        "npm:3.1.3"
+      ],
+      [
+        "escalade",
+        "npm:3.1.1"
+      ],
+      [
+        "escape-string-regexp",
+        "npm:1.0.5"
+      ],
+      [
+        "eslint",
+        "npm:7.14.0"
+      ],
+      [
+        "eslint-scope",
+        "npm:5.1.1"
+      ],
+      [
+        "eslint-utils",
+        "npm:2.1.0"
+      ],
+      [
+        "eslint-visitor-keys",
+        "npm:1.3.0"
+      ],
+      [
+        "espree",
+        "npm:7.3.0"
+      ],
+      [
+        "esprima",
+        "npm:4.0.1"
+      ],
+      [
+        "esquery",
+        "npm:1.3.1"
+      ],
+      [
+        "esrecurse",
+        "npm:4.3.0"
+      ],
+      [
+        "estraverse",
+        "npm:5.2.0"
+      ],
+      [
+        "esutils",
+        "npm:2.0.3"
+      ],
+      [
+        "etag",
+        "npm:1.8.1"
+      ],
+      [
+        "event-target-shim",
+        "npm:5.0.1"
+      ],
+      [
+        "events",
+        "npm:3.2.0"
+      ],
+      [
+        "evp_bytestokey",
+        "npm:1.0.3"
+      ],
+      [
+        "expand-brackets",
+        "npm:2.1.4"
+      ],
+      [
+        "expand-template",
+        "npm:2.0.3"
+      ],
+      [
+        "ext",
+        "npm:1.4.0"
+      ],
+      [
+        "extend",
+        "npm:3.0.2"
+      ],
+      [
+        "extend-shallow",
+        "npm:2.0.1"
+      ],
+      [
+        "extglob",
+        "npm:2.0.4"
+      ],
+      [
+        "extsprintf",
+        "npm:1.3.0"
+      ],
+      [
+        "fast-deep-equal",
+        "npm:3.1.3"
+      ],
+      [
+        "fast-json-stable-stringify",
+        "npm:2.1.0"
+      ],
+      [
+        "fast-levenshtein",
+        "npm:2.0.6"
+      ],
+      [
+        "figgy-pudding",
+        "npm:3.5.2"
+      ],
+      [
+        "file-entry-cache",
+        "npm:5.0.1"
+      ],
+      [
+        "file-uri-to-path",
+        "npm:1.0.0"
+      ],
+      [
+        "fill-range",
+        "npm:7.0.1"
+      ],
+      [
+        "find-cache-dir",
+        "npm:3.3.1"
+      ],
+      [
+        "find-root",
+        "npm:1.1.0"
+      ],
+      [
+        "find-up",
+        "npm:4.1.0"
+      ],
+      [
+        "flat-cache",
+        "npm:2.0.1"
+      ],
+      [
+        "flatted",
+        "npm:2.0.2"
+      ],
+      [
+        "flush-write-stream",
+        "npm:1.1.1"
+      ],
+      [
+        "focus-lock",
+        "npm:0.7.0"
+      ],
+      [
+        "for-in",
+        "npm:1.0.2"
+      ],
+      [
+        "forever-agent",
+        "npm:0.6.1"
+      ],
+      [
+        "form-data",
+        "npm:2.3.3"
+      ],
+      [
+        "fragment-cache",
+        "npm:0.2.1"
+      ],
+      [
+        "framer-motion",
+        "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"
+      ],
+      [
+        "framesync",
+        "npm:4.1.0"
+      ],
+      [
+        "from2",
+        "npm:2.3.0"
+      ],
+      [
+        "fs-constants",
+        "npm:1.0.0"
+      ],
+      [
+        "fs-minipass",
+        "npm:2.1.0"
+      ],
+      [
+        "fs-write-stream-atomic",
+        "npm:1.0.10"
+      ],
+      [
+        "fs.realpath",
+        "npm:1.0.0"
+      ],
+      [
+        "fsevents",
+        "patch:fsevents@npm%3A2.1.3#builtin<compat/fsevents>::version=2.1.3&hash=127e8e"
+      ],
+      [
+        "function-bind",
+        "npm:1.1.1"
+      ],
+      [
+        "functional-red-black-tree",
+        "npm:1.0.1"
+      ],
+      [
+        "gauge",
+        "npm:2.7.4"
+      ],
+      [
+        "get-nonce",
+        "npm:1.0.1"
+      ],
+      [
+        "get-value",
+        "npm:2.0.6"
+      ],
+      [
+        "getpass",
+        "npm:0.1.7"
+      ],
+      [
+        "github-from-package",
+        "npm:0.0.0"
+      ],
+      [
+        "glob",
+        "npm:7.1.6"
+      ],
+      [
+        "glob-parent",
+        "npm:5.1.1"
+      ],
+      [
+        "glob-to-regexp",
+        "npm:0.4.1"
+      ],
+      [
+        "globals",
+        "npm:12.4.0"
+      ],
+      [
+        "graceful-fs",
+        "npm:4.2.4"
+      ],
+      [
+        "har-schema",
+        "npm:2.0.0"
+      ],
+      [
+        "har-validator",
+        "npm:5.1.5"
+      ],
+      [
+        "has",
+        "npm:1.0.3"
+      ],
+      [
+        "has-flag",
+        "npm:3.0.0"
+      ],
+      [
+        "has-unicode",
+        "npm:2.0.1"
+      ],
+      [
+        "has-value",
+        "npm:1.0.0"
+      ],
+      [
+        "has-values",
+        "npm:1.0.0"
+      ],
+      [
+        "hash-base",
+        "npm:3.1.0"
+      ],
+      [
+        "hash.js",
+        "npm:1.1.7"
+      ],
+      [
+        "he",
+        "npm:1.2.0"
+      ],
+      [
+        "hey-listen",
+        "npm:1.0.8"
+      ],
+      [
+        "hmac-drbg",
+        "npm:1.0.1"
+      ],
+      [
+        "hoist-non-react-statics",
+        "npm:3.3.2"
+      ],
+      [
+        "htmlparser2",
+        "npm:4.1.0"
+      ],
+      [
+        "http-errors",
+        "npm:1.7.3"
+      ],
+      [
+        "http-signature",
+        "npm:1.2.0"
+      ],
+      [
+        "https-browserify",
+        "npm:1.0.0"
+      ],
+      [
+        "https-proxy-agent",
+        "npm:5.0.0"
+      ],
+      [
+        "iconv-lite",
+        "npm:0.4.24"
+      ],
+      [
+        "icss-utils",
+        "npm:4.1.1"
+      ],
+      [
+        "ieee754",
+        "npm:1.2.1"
+      ],
+      [
+        "iferr",
+        "npm:0.1.5"
+      ],
+      [
+        "ignore",
+        "npm:4.0.6"
+      ],
+      [
+        "import-fresh",
+        "npm:3.2.2"
+      ],
+      [
+        "imurmurhash",
+        "npm:0.1.4"
+      ],
+      [
+        "indexes-of",
+        "npm:1.0.1"
+      ],
+      [
+        "infer-owner",
+        "npm:1.0.4"
+      ],
+      [
+        "inflight",
+        "npm:1.0.6"
+      ],
+      [
+        "inherits",
+        "npm:2.0.4"
+      ],
+      [
+        "ini",
+        "npm:1.3.5"
+      ],
+      [
+        "invariant",
+        "npm:2.2.4"
+      ],
+      [
+        "is-accessor-descriptor",
+        "npm:0.1.6"
+      ],
+      [
+        "is-arrayish",
+        "npm:0.2.1"
+      ],
+      [
+        "is-binary-path",
+        "npm:2.1.0"
+      ],
+      [
+        "is-buffer",
+        "npm:1.1.6"
+      ],
+      [
+        "is-core-module",
+        "npm:2.1.0"
+      ],
+      [
+        "is-data-descriptor",
+        "npm:0.1.4"
+      ],
+      [
+        "is-descriptor",
+        "npm:1.0.2"
+      ],
+      [
+        "is-extendable",
+        "npm:0.1.1"
+      ],
+      [
+        "is-extglob",
+        "npm:2.1.1"
+      ],
+      [
+        "is-fullwidth-code-point",
+        "npm:2.0.0"
+      ],
+      [
+        "is-glob",
+        "npm:4.0.1"
+      ],
+      [
+        "is-number",
+        "npm:3.0.0"
+      ],
+      [
+        "is-plain-object",
+        "npm:2.0.4"
+      ],
+      [
+        "is-typedarray",
+        "npm:1.0.0"
+      ],
+      [
+        "is-windows",
+        "npm:1.0.2"
+      ],
+      [
+        "is-wsl",
+        "npm:1.1.0"
+      ],
+      [
+        "isarray",
+        "npm:1.0.0"
+      ],
+      [
+        "isexe",
+        "npm:2.0.0"
+      ],
+      [
+        "isobject",
+        "npm:3.0.1"
+      ],
+      [
+        "isstream",
+        "npm:0.1.2"
+      ],
+      [
+        "jest-worker",
+        "npm:24.9.0"
+      ],
+      [
+        "js-tokens",
+        "npm:4.0.0"
+      ],
+      [
+        "js-yaml",
+        "npm:3.14.0"
+      ],
+      [
+        "jsbn",
+        "npm:0.1.1"
+      ],
+      [
+        "json-parse-better-errors",
+        "npm:1.0.2"
+      ],
+      [
+        "json-parse-even-better-errors",
+        "npm:2.3.1"
+      ],
+      [
+        "json-schema",
+        "npm:0.2.3"
+      ],
+      [
+        "json-schema-traverse",
+        "npm:0.4.1"
+      ],
+      [
+        "json-stable-stringify-without-jsonify",
+        "npm:1.0.1"
+      ],
+      [
+        "json-stringify-safe",
+        "npm:5.0.1"
+      ],
+      [
+        "json5",
+        "npm:1.0.1"
+      ],
+      [
+        "jsprim",
+        "npm:1.4.1"
+      ],
+      [
+        "kind-of",
+        "npm:3.2.2"
+      ],
+      [
+        "klona",
+        "npm:2.0.4"
+      ],
+      [
+        "levn",
+        "npm:0.4.1"
+      ],
+      [
+        "line-column",
+        "npm:1.0.2"
+      ],
+      [
+        "lines-and-columns",
+        "npm:1.1.6"
+      ],
+      [
+        "loader-runner",
+        "npm:2.4.0"
+      ],
+      [
+        "loader-utils",
+        "npm:2.0.0"
+      ],
+      [
+        "locate-path",
+        "npm:5.0.0"
+      ],
+      [
+        "lodash",
+        "npm:4.17.20"
+      ],
+      [
+        "lodash.mergewith",
+        "npm:4.6.2"
+      ],
+      [
+        "lodash.sortby",
+        "npm:4.7.0"
+      ],
+      [
+        "loose-envify",
+        "npm:1.4.0"
+      ],
+      [
+        "lru-cache",
+        "npm:6.0.0"
+      ],
+      [
+        "make-dir",
+        "npm:3.1.0"
+      ],
+      [
+        "map-cache",
+        "npm:0.2.2"
+      ],
+      [
+        "map-visit",
+        "npm:1.0.0"
+      ],
+      [
+        "md5.js",
+        "npm:1.3.5"
+      ],
+      [
+        "memory-fs",
+        "npm:0.5.0"
+      ],
+      [
+        "merge-stream",
+        "npm:2.0.0"
+      ],
+      [
+        "micromatch",
+        "npm:3.1.10"
+      ],
+      [
+        "miller-rabin",
+        "npm:4.0.1"
+      ],
+      [
+        "mime-db",
+        "npm:1.44.0"
+      ],
+      [
+        "mime-types",
+        "npm:2.1.27"
+      ],
+      [
+        "mimic-response",
+        "npm:2.1.0"
+      ],
+      [
+        "minimalistic-assert",
+        "npm:1.0.1"
+      ],
+      [
+        "minimalistic-crypto-utils",
+        "npm:1.0.1"
+      ],
+      [
+        "minimatch",
+        "npm:3.0.4"
+      ],
+      [
+        "minimist",
+        "npm:1.2.5"
+      ],
+      [
+        "minipass",
+        "npm:3.1.3"
+      ],
+      [
+        "minizlib",
+        "npm:2.1.2"
+      ],
+      [
+        "mississippi",
+        "npm:3.0.0"
+      ],
+      [
+        "mixin-deep",
+        "npm:1.3.2"
+      ],
+      [
+        "mkdirp",
+        "npm:0.5.5"
+      ],
+      [
+        "mkdirp-classic",
+        "npm:0.5.3"
+      ],
+      [
+        "move-concurrently",
+        "npm:1.0.1"
+      ],
+      [
+        "ms",
+        "npm:2.1.2"
+      ],
+      [
+        "nan",
+        "npm:2.14.2"
+      ],
+      [
+        "nanoid",
+        "npm:3.1.18"
+      ],
+      [
+        "nanomatch",
+        "npm:1.2.13"
+      ],
+      [
+        "napi-build-utils",
+        "npm:1.0.2"
+      ],
+      [
+        "native-url",
+        "npm:0.3.4"
+      ],
+      [
+        "natural-compare",
+        "npm:1.4.0"
+      ],
+      [
+        "neo-async",
+        "npm:2.6.2"
+      ],
+      [
+        "next",
+        "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:10.0.3"
+      ],
+      [
+        "next-tick",
+        "npm:1.0.0"
+      ],
+      [
+        "node-abi",
+        "npm:2.19.3"
+      ],
+      [
+        "node-addon-api",
+        "npm:3.0.2"
+      ],
+      [
+        "node-fetch",
+        "npm:2.6.1"
+      ],
+      [
+        "node-gyp",
+        "npm:7.1.2"
+      ],
+      [
+        "node-html-parser",
+        "npm:1.4.9"
+      ],
+      [
+        "node-libs-browser",
+        "npm:2.2.1"
+      ],
+      [
+        "node-releases",
+        "npm:1.1.67"
+      ],
+      [
+        "noop-logger",
+        "npm:0.1.1"
+      ],
+      [
+        "nopt",
+        "npm:5.0.0"
+      ],
+      [
+        "normalize-html-whitespace",
+        "npm:1.0.0"
+      ],
+      [
+        "normalize-path",
+        "npm:3.0.0"
+      ],
+      [
+        "npmlog",
+        "npm:4.1.2"
+      ],
+      [
+        "number-is-nan",
+        "npm:1.0.1"
+      ],
+      [
+        "oauth-sign",
+        "npm:0.9.0"
+      ],
+      [
+        "object-assign",
+        "npm:4.1.1"
+      ],
+      [
+        "object-copy",
+        "npm:0.1.0"
+      ],
+      [
+        "object-visit",
+        "npm:1.0.1"
+      ],
+      [
+        "object.pick",
+        "npm:1.3.0"
+      ],
+      [
+        "once",
+        "npm:1.4.0"
+      ],
+      [
+        "optionator",
+        "npm:0.9.1"
+      ],
+      [
+        "os-browserify",
+        "npm:0.3.0"
+      ],
+      [
+        "p-limit",
+        "npm:2.3.0"
+      ],
+      [
+        "p-locate",
+        "npm:4.1.0"
+      ],
+      [
+        "p-try",
+        "npm:2.2.0"
+      ],
+      [
+        "pako",
+        "npm:1.0.11"
+      ],
+      [
+        "parallel-transform",
+        "npm:1.2.0"
+      ],
+      [
+        "parent-module",
+        "npm:1.0.1"
+      ],
+      [
+        "parse-asn1",
+        "npm:5.1.6"
+      ],
+      [
+        "parse-json",
+        "npm:5.1.0"
+      ],
+      [
+        "pascalcase",
+        "npm:0.1.1"
+      ],
+      [
+        "path-browserify",
+        "npm:1.0.1"
+      ],
+      [
+        "path-dirname",
+        "npm:1.0.2"
+      ],
+      [
+        "path-exists",
+        "npm:4.0.0"
+      ],
+      [
+        "path-is-absolute",
+        "npm:1.0.1"
+      ],
+      [
+        "path-key",
+        "npm:3.1.1"
+      ],
+      [
+        "path-parse",
+        "npm:1.0.6"
+      ],
+      [
+        "path-type",
+        "npm:4.0.0"
+      ],
+      [
+        "pbkdf2",
+        "npm:3.1.1"
+      ],
+      [
+        "performance-now",
+        "npm:2.1.0"
+      ],
+      [
+        "picomatch",
+        "npm:2.2.2"
+      ],
+      [
+        "pify",
+        "npm:4.0.1"
+      ],
+      [
+        "pkg-dir",
+        "npm:4.2.0"
+      ],
+      [
+        "platform",
+        "npm:1.3.3"
+      ],
+      [
+        "pnp-webpack-plugin",
+        "npm:1.6.4"
+      ],
+      [
+        "popmotion",
+        "npm:9.0.0-rc.20"
+      ],
+      [
+        "portfolio",
+        "workspace:apps/portfolio"
+      ],
+      [
+        "posix-character-classes",
+        "npm:0.1.1"
+      ],
+      [
+        "postcss",
+        "npm:7.0.35"
+      ],
+      [
+        "postcss-modules-extract-imports",
+        "npm:2.0.0"
+      ],
+      [
+        "postcss-modules-local-by-default",
+        "npm:3.0.3"
+      ],
+      [
+        "postcss-modules-scope",
+        "npm:2.2.0"
+      ],
+      [
+        "postcss-modules-values",
+        "npm:3.0.0"
+      ],
+      [
+        "postcss-safe-parser",
+        "npm:4.0.2"
+      ],
+      [
+        "postcss-selector-parser",
+        "npm:6.0.4"
+      ],
+      [
+        "postcss-value-parser",
+        "npm:4.1.0"
+      ],
+      [
+        "prebuild-install",
+        "npm:5.3.6"
+      ],
+      [
+        "prelude-ls",
+        "npm:1.2.1"
+      ],
+      [
+        "prettier",
+        "npm:2.2.0"
+      ],
+      [
+        "process",
+        "npm:0.11.10"
+      ],
+      [
+        "process-nextick-args",
+        "npm:2.0.1"
+      ],
+      [
+        "progress",
+        "npm:2.0.3"
+      ],
+      [
+        "promise-inflight",
+        "virtual:0a601d06b9bb877e28dc3c2bf132b715e8c8db39518cb037053d3e960e698b842f18c4ad29c4dbd116bd79f31c565cbbc9741fa4573e2713fab36fd780658f57#npm:1.0.1"
+      ],
+      [
+        "prop-types",
+        "npm:15.7.2"
+      ],
+      [
+        "prr",
+        "npm:1.0.1"
+      ],
+      [
+        "psl",
+        "npm:1.8.0"
+      ],
+      [
+        "public-encrypt",
+        "npm:4.0.3"
+      ],
+      [
+        "pump",
+        "npm:3.0.0"
+      ],
+      [
+        "pumpify",
+        "npm:1.5.1"
+      ],
+      [
+        "punycode",
+        "npm:2.1.1"
+      ],
+      [
+        "qs",
+        "npm:6.5.2"
+      ],
+      [
+        "querystring",
+        "npm:0.2.0"
+      ],
+      [
+        "querystring-es3",
+        "npm:0.2.1"
+      ],
+      [
+        "randombytes",
+        "npm:2.1.0"
+      ],
+      [
+        "randomfill",
+        "npm:1.0.4"
+      ],
+      [
+        "raw-body",
+        "npm:2.4.1"
+      ],
+      [
+        "rc",
+        "npm:1.2.8"
+      ],
+      [
+        "react",
+        "npm:16.14.0"
+      ],
+      [
+        "react-clientside-effect",
+        "virtual:12230abb61c80b470db43df7e1933781886d192d3e910e0c7f2168fc549297dcc2a56128d6d51028deb501815c5c27b7867115f7f8099e83c57f63692668de43#npm:1.2.2"
+      ],
+      [
+        "react-dom",
+        "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"
+      ],
+      [
+        "react-fast-compare",
+        "npm:3.2.0"
+      ],
+      [
+        "react-focus-lock",
+        "virtual:330fbc6f59788e4d7d75db4eb6e745f425d2bae80ce09d1001d1b5bca92d6e3a8817334160c8813df8e770e2ef23a3e5424a9f96ff9d93177365811e8f5ee123#npm:2.4.1"
+      ],
+      [
+        "react-is",
+        "npm:16.13.1"
+      ],
+      [
+        "react-refresh",
+        "npm:0.8.3"
+      ],
+      [
+        "react-remove-scroll",
+        "virtual:b0ebc65ceb387b0e44554718c406c0e28c4fadd384a4ded795f3f3a12c7f115f9f961fbd1ebb61bf9df65e781834f03d8726a7563453bebbb2db8aede05e6024#npm:2.4.0"
+      ],
+      [
+        "react-remove-scroll-bar",
+        "virtual:7393b755b44dd5694e05e935e5e3aeee20ed151f7ec36d3abb2f817be9ee8c2b448402d53764e84ad1424b6856b6a6ea153414c891380e9b3d5448ff16233152#npm:2.1.0"
+      ],
+      [
+        "react-style-singleton",
+        "virtual:7393b755b44dd5694e05e935e5e3aeee20ed151f7ec36d3abb2f817be9ee8c2b448402d53764e84ad1424b6856b6a6ea153414c891380e9b3d5448ff16233152#npm:2.1.0"
+      ],
+      [
+        "readable-stream",
+        "npm:2.3.7"
+      ],
+      [
+        "readdirp",
+        "npm:3.5.0"
+      ],
+      [
+        "regenerator-runtime",
+        "npm:0.13.7"
+      ],
+      [
+        "regex-not",
+        "npm:1.0.2"
+      ],
+      [
+        "regex-parser",
+        "npm:2.2.11"
+      ],
+      [
+        "regexpp",
+        "npm:3.1.0"
+      ],
+      [
+        "remove-trailing-separator",
+        "npm:1.1.0"
+      ],
+      [
+        "repeat-element",
+        "npm:1.1.3"
+      ],
+      [
+        "repeat-string",
+        "npm:1.6.1"
+      ],
+      [
+        "request",
+        "npm:2.88.2"
+      ],
+      [
+        "resolve",
+        "patch:resolve@npm%3A1.19.0#builtin<compat/resolve>::version=1.19.0&hash=3388aa"
+      ],
+      [
+        "resolve-from",
+        "npm:4.0.0"
+      ],
+      [
+        "resolve-url",
+        "npm:0.2.1"
+      ],
+      [
+        "resolve-url-loader",
+        "npm:3.1.2"
+      ],
+      [
+        "ret",
+        "npm:0.1.15"
+      ],
+      [
+        "rework",
+        "npm:1.0.1"
+      ],
+      [
+        "rework-visit",
+        "npm:1.0.0"
+      ],
+      [
+        "rimraf",
+        "npm:2.7.1"
+      ],
+      [
+        "ripemd160",
+        "npm:2.0.2"
+      ],
+      [
+        "run-queue",
+        "npm:1.0.3"
+      ],
+      [
+        "safe-buffer",
+        "npm:5.2.1"
+      ],
+      [
+        "safe-regex",
+        "npm:1.1.0"
+      ],
+      [
+        "safer-buffer",
+        "npm:2.1.2"
+      ],
+      [
+        "sass-loader",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:10.0.5"
+      ],
+      [
+        "scheduler",
+        "npm:0.19.1"
+      ],
+      [
+        "schema-utils",
+        "npm:2.7.1"
+      ],
+      [
+        "semver",
+        "npm:7.3.2"
+      ],
+      [
+        "serialize-javascript",
+        "npm:4.0.0"
+      ],
+      [
+        "set-blocking",
+        "npm:2.0.0"
+      ],
+      [
+        "set-value",
+        "npm:2.0.1"
+      ],
+      [
+        "setimmediate",
+        "npm:1.0.5"
+      ],
+      [
+        "setprototypeof",
+        "npm:1.1.1"
+      ],
+      [
+        "sha.js",
+        "npm:2.4.11"
+      ],
+      [
+        "sharp",
+        "npm:0.26.2"
+      ],
+      [
+        "shebang-command",
+        "npm:2.0.0"
+      ],
+      [
+        "shebang-regex",
+        "npm:3.0.0"
+      ],
+      [
+        "shell-quote",
+        "npm:1.7.2"
+      ],
+      [
+        "signal-exit",
+        "npm:3.0.3"
+      ],
+      [
+        "simple-concat",
+        "npm:1.0.1"
+      ],
+      [
+        "simple-get",
+        "npm:3.1.0"
+      ],
+      [
+        "simple-swizzle",
+        "npm:0.2.2"
+      ],
+      [
+        "slice-ansi",
+        "npm:2.1.0"
+      ],
+      [
+        "snapdragon",
+        "npm:0.8.2"
+      ],
+      [
+        "snapdragon-node",
+        "npm:2.1.1"
+      ],
+      [
+        "snapdragon-util",
+        "npm:3.0.1"
+      ],
+      [
+        "source-list-map",
+        "npm:2.0.1"
+      ],
+      [
+        "source-map",
+        "npm:0.6.1"
+      ],
+      [
+        "source-map-resolve",
+        "npm:0.5.3"
+      ],
+      [
+        "source-map-support",
+        "npm:0.5.19"
+      ],
+      [
+        "source-map-url",
+        "npm:0.4.0"
+      ],
+      [
+        "split-string",
+        "npm:3.1.0"
+      ],
+      [
+        "sprintf-js",
+        "npm:1.0.3"
+      ],
+      [
+        "sshpk",
+        "npm:1.16.1"
+      ],
+      [
+        "ssri",
+        "npm:6.0.1"
+      ],
+      [
+        "stacktrace-parser",
+        "npm:0.1.10"
+      ],
+      [
+        "static-extend",
+        "npm:0.1.2"
+      ],
+      [
+        "statuses",
+        "npm:1.5.0"
+      ],
+      [
+        "stream-browserify",
+        "npm:3.0.0"
+      ],
+      [
+        "stream-each",
+        "npm:1.2.3"
+      ],
+      [
+        "stream-http",
+        "npm:2.8.3"
+      ],
+      [
+        "stream-shift",
+        "npm:1.0.1"
+      ],
+      [
+        "string-hash",
+        "npm:1.1.3"
+      ],
+      [
+        "string-width",
+        "npm:3.1.0"
+      ],
+      [
+        "string_decoder",
+        "npm:1.3.0"
+      ],
+      [
+        "strip-ansi",
+        "npm:6.0.0"
+      ],
+      [
+        "strip-json-comments",
+        "npm:3.1.1"
+      ],
+      [
+        "style-loader",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:1.2.1"
+      ],
+      [
+        "style-value-types",
+        "npm:3.1.9"
+      ],
+      [
+        "styled-jsx",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:3.3.2"
+      ],
+      [
+        "stylis",
+        "npm:3.5.4"
+      ],
+      [
+        "stylis-rule-sheet",
+        "virtual:bac41af28e36f565abf5551bd8c5b3613e9215cd4f07a1321ebbb473befefab71d1a05be944a3e47f32ce09230bd42683abf2e63a289eac68f417a1a930a36ef#npm:0.0.10"
+      ],
+      [
+        "supports-color",
+        "npm:6.1.0"
+      ],
+      [
+        "table",
+        "npm:5.4.6"
+      ],
+      [
+        "tapable",
+        "npm:1.1.3"
+      ],
+      [
+        "tar",
+        "npm:6.0.5"
+      ],
+      [
+        "tar-fs",
+        "npm:2.1.1"
+      ],
+      [
+        "tar-stream",
+        "npm:2.1.4"
+      ],
+      [
+        "terser",
+        "npm:5.1.0"
+      ],
+      [
+        "text-table",
+        "npm:0.2.0"
+      ],
+      [
+        "through2",
+        "npm:2.0.5"
+      ],
+      [
+        "timers-browserify",
+        "npm:2.0.12"
+      ],
+      [
+        "tiny-invariant",
+        "npm:1.1.0"
+      ],
+      [
+        "tinycolor2",
+        "npm:1.4.2"
+      ],
+      [
+        "to-arraybuffer",
+        "npm:1.0.1"
+      ],
+      [
+        "to-fast-properties",
+        "npm:2.0.0"
+      ],
+      [
+        "to-object-path",
+        "npm:0.3.0"
+      ],
+      [
+        "to-regex",
+        "npm:3.0.2"
+      ],
+      [
+        "to-regex-range",
+        "npm:5.0.1"
+      ],
+      [
+        "toggle-selection",
+        "npm:1.0.6"
+      ],
+      [
+        "toidentifier",
+        "npm:1.0.0"
+      ],
+      [
+        "tough-cookie",
+        "npm:2.5.0"
+      ],
+      [
+        "tr46",
+        "npm:1.0.1"
+      ],
+      [
+        "traverse",
+        "npm:0.6.6"
+      ],
+      [
+        "ts-pnp",
+        "virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.2.0"
+      ],
+      [
+        "tslib",
+        "npm:1.14.1"
+      ],
+      [
+        "tty-browserify",
+        "npm:0.0.0"
+      ],
+      [
+        "tunnel-agent",
+        "npm:0.6.0"
+      ],
+      [
+        "tweetnacl",
+        "npm:0.14.5"
+      ],
+      [
+        "type",
+        "npm:2.1.0"
+      ],
+      [
+        "type-check",
+        "npm:0.4.0"
+      ],
+      [
+        "type-fest",
+        "npm:0.8.1"
+      ],
+      [
+        "typedarray",
+        "npm:0.0.6"
+      ],
+      [
+        "typescript",
+        "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=5bf698"
+      ],
+      [
+        "union-value",
+        "npm:1.0.1"
+      ],
+      [
+        "uniq",
+        "npm:1.0.1"
+      ],
+      [
+        "unique-filename",
+        "npm:1.1.1"
+      ],
+      [
+        "unique-slug",
+        "npm:2.0.2"
+      ],
+      [
+        "unpipe",
+        "npm:1.0.0"
+      ],
+      [
+        "unset-value",
+        "npm:1.0.0"
+      ],
+      [
+        "upath",
+        "npm:1.2.0"
+      ],
+      [
+        "uri-js",
+        "npm:4.4.0"
+      ],
+      [
+        "urix",
+        "npm:0.1.0"
+      ],
+      [
+        "url",
+        "npm:0.11.0"
+      ],
+      [
+        "use",
+        "npm:3.1.1"
+      ],
+      [
+        "use-callback-ref",
+        "virtual:12230abb61c80b470db43df7e1933781886d192d3e910e0c7f2168fc549297dcc2a56128d6d51028deb501815c5c27b7867115f7f8099e83c57f63692668de43#npm:1.2.4"
+      ],
+      [
+        "use-sidecar",
+        "virtual:12230abb61c80b470db43df7e1933781886d192d3e910e0c7f2168fc549297dcc2a56128d6d51028deb501815c5c27b7867115f7f8099e83c57f63692668de43#npm:1.0.3"
+      ],
+      [
+        "use-subscription",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:1.5.1"
+      ],
+      [
+        "util",
+        "npm:0.10.3"
+      ],
+      [
+        "util-deprecate",
+        "npm:1.0.2"
+      ],
+      [
+        "uuid",
+        "npm:3.4.0"
+      ],
+      [
+        "v8-compile-cache",
+        "npm:2.2.0"
+      ],
+      [
+        "verror",
+        "npm:1.10.0"
+      ],
+      [
+        "vm-browserify",
+        "npm:1.1.2"
+      ],
+      [
+        "warning",
+        "npm:4.0.3"
+      ],
+      [
+        "watchpack",
+        "npm:2.0.0-beta.13"
+      ],
+      [
+        "watchpack-chokidar2",
+        "npm:2.0.1"
+      ],
+      [
+        "webidl-conversions",
+        "npm:4.0.2"
+      ],
+      [
+        "webpack",
+        "virtual:e26378ccbb33f42dd2a22861ea6cb7e1f40cd82c5034b2999fc441c25e23646ecd87e199f010cd1f4295e35aec0f062075576510d549cacd7a5f993c7d2e6978#npm:4.44.1"
+      ],
+      [
+        "webpack-sources",
+        "npm:1.4.3"
+      ],
+      [
+        "whatwg-url",
+        "npm:7.1.0"
+      ],
+      [
+        "which",
+        "npm:2.0.2"
+      ],
+      [
+        "which-pm-runs",
+        "npm:1.0.0"
+      ],
+      [
+        "wide-align",
+        "npm:1.1.3"
+      ],
+      [
+        "word-wrap",
+        "npm:1.2.3"
+      ],
+      [
+        "worker-farm",
+        "npm:1.7.0"
+      ],
+      [
+        "wrappy",
+        "npm:1.0.2"
+      ],
+      [
+        "write",
+        "npm:1.0.3"
+      ],
+      [
+        "xtend",
+        "npm:4.0.2"
+      ],
+      [
+        "y18n",
+        "npm:4.0.0"
+      ],
+      [
+        "yallist",
+        "npm:4.0.0"
+      ],
+      [
+        "yaml",
+        "npm:1.10.0"
+      ]
     ],
     "locationBlacklistData": [
     ],
@@ -234,32 +2934,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/transition", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/transition", "virtual:f362047dfb3951026e2ff97df7b9578dcc3d25227c134b59e214be1fe8b101efd466a14c658820b60ebc31fb6a06a42745f62c48205256a4b1cd960a17d1322b#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -272,31 +2956,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/alert", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -309,31 +2977,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/avatar", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/image", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -345,31 +2997,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/breadcrumb", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -382,31 +3018,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/button", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/spinner", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -419,32 +3039,44 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/checkbox", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@chakra-ui/visually-hidden", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
             ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
             "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
             "framer-motion",
-            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:898511336fb1d537b2e1f10ec07909051743d281fdd926fc138d9a697eb17616f89675481f241c4792acad45d71357f56f9a9e03965a48d8d00b735f52409f47#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-checkbox-virtual-19348ac4eb/0/cache/@chakra-ui-checkbox-npm-1.0.1-7f3cf12d33-152edcf69f.zip/node_modules/@chakra-ui/checkbox/",
+          "packageDependencies": [
+            ["@chakra-ui/checkbox", "virtual:898511336fb1d537b2e1f10ec07909051743d281fdd926fc138d9a697eb17616f89675481f241c4792acad45d71357f56f9a9e03965a48d8d00b735f52409f47#npm:1.0.1"],
+            ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
+            ["@chakra-ui/visually-hidden", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@types/chakra-ui__system", null],
+            ["@types/framer-motion", null],
+            ["@types/react", "npm:16.14.2"],
+            ["framer-motion", null],
+            ["react", "npm:16.14.0"]
+          ],
+          "packagePeers": [
+            "@chakra-ui/system",
+            "@types/chakra-ui__system",
+            "@types/framer-motion",
+            "@types/react",
+            "framer-motion",
             "react"
           ],
           "linkType": "HARD",
@@ -455,28 +3087,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@chakra-ui-clickable-virtual-b52b625150/0/cache/@chakra-ui-clickable-npm-1.0.1-917b8db7ea-c04034b476.zip/node_modules/@chakra-ui/clickable/",
           "packageDependencies": [
             ["@chakra-ui/clickable", "virtual:6f9618903320c4802e7dff68c0d1f17abfc27a2b0e79d1c188280ff7a5cc3ebc2417da0cf28ff92ba68c83ff76068df7ebd57859920fdc7216aaabe9eed0e4f1#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -489,64 +3105,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/close-button", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@chakra-ui/color-mode", [
-        ["virtual:c43179ff2fb6eeb1edd4f622f166f4c9d83edef20024c7cdf5d123de936e7ce6cea32a56bc3c35446a51b2af6a5838823a1ceee74fac695d57c17c76b12c4c0c#npm:1.0.1", {
-          "packageLocation": "./.yarn/$$virtual/@chakra-ui-color-mode-virtual-d46d275f10/0/cache/@chakra-ui-color-mode-npm-1.0.1-d0548584a2-c07f80bab2.zip/node_modules/@chakra-ui/color-mode/",
+        ["virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-color-mode-virtual-e6e9c58ad1/0/cache/@chakra-ui-color-mode-npm-1.0.1-d0548584a2-c07f80bab2.zip/node_modules/@chakra-ui/color-mode/",
           "packageDependencies": [
-            ["@chakra-ui/color-mode", "virtual:c43179ff2fb6eeb1edd4f622f166f4c9d83edef20024c7cdf5d123de936e7ce6cea32a56bc3c35446a51b2af6a5838823a1ceee74fac695d57c17c76b12c4c0c#npm:1.0.1"],
+            ["@chakra-ui/color-mode", "virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -558,31 +3142,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/control-box", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -594,28 +3162,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/counter", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -646,27 +3198,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/descendant", "virtual:f362047dfb3951026e2ff97df7b9578dcc3d25227c134b59e214be1fe8b101efd466a14c658820b60ebc31fb6a06a42745f62c48205256a4b1cd960a17d1322b#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -679,31 +3215,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/editable", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -714,29 +3234,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@chakra-ui-focus-lock-virtual-330fbc6f59/0/cache/@chakra-ui-focus-lock-npm-1.0.1-068fcd031d-259f4d1415.zip/node_modules/@chakra-ui/focus-lock/",
           "packageDependencies": [
             ["@chakra-ui/focus-lock", "virtual:b0ebc65ceb387b0e44554718c406c0e28c4fadd384a4ded795f3f3a12c7f115f9f961fbd1ebb61bf9df65e781834f03d8726a7563453bebbb2db8aede05e6024#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"],
             ["react-focus-lock", "virtual:330fbc6f59788e4d7d75db4eb6e745f425d2bae80ce09d1001d1b5bca92d6e3a8817334160c8813df8e770e2ef23a3e5424a9f96ff9d93177365811e8f5ee123#npm:2.4.1"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -750,31 +3254,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -785,31 +3273,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@chakra-ui-hooks-virtual-0e4b1e7a8e/0/cache/@chakra-ui-hooks-npm-1.0.1-6416a16dcb-775c54108e.zip/node_modules/@chakra-ui/hooks/",
           "packageDependencies": [
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@reach/auto-id", "virtual:0e4b1e7a8ee4d38672b06fbe9e98b076e493cb070d4a18dd0fee915e6776041b6437628e493304efdd5452547fd52bc86c68a75ee9894d1d21cc87a06dac2a0f#npm:0.11.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["compute-scroll-into-view", "npm:1.0.14"],
             ["copy-to-clipboard", "npm:3.3.1"],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -821,31 +3293,53 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:f5bd17cdea35b161aececef0cc8a398823f2236eff32e172f9db6a6e41949314d6f731ca3533cec8a02dc039eb5433879157478bd6a05e2811c772b2d9b3b337#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-icon-virtual-c40971d47e/0/cache/@chakra-ui-icon-npm-1.0.1-44f8f6651a-7aa195ff19.zip/node_modules/@chakra-ui/icon/",
+          "packageDependencies": [
+            ["@chakra-ui/icon", "virtual:f5bd17cdea35b161aececef0cc8a398823f2236eff32e172f9db6a6e41949314d6f731ca3533cec8a02dc039eb5433879157478bd6a05e2811c772b2d9b3b337#npm:1.0.1"],
+            ["@chakra-ui/system", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
+            ["@types/chakra-ui__system", null],
+            ["@types/react", "npm:16.14.2"],
+            ["react", "npm:16.14.0"]
+          ],
+          "packagePeers": [
+            "@chakra-ui/system",
+            "@types/chakra-ui__system",
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@chakra-ui/icons", [
+        ["virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-icons-virtual-f5bd17cdea/0/cache/@chakra-ui-icons-npm-1.0.1-d09b230ba8-4b8a30bd52.zip/node_modules/@chakra-ui/icons/",
+          "packageDependencies": [
+            ["@chakra-ui/icons", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:1.0.1"],
+            ["@chakra-ui/icon", "virtual:f5bd17cdea35b161aececef0cc8a398823f2236eff32e172f9db6a6e41949314d6f731ca3533cec8a02dc039eb5433879157478bd6a05e2811c772b2d9b3b337#npm:1.0.1"],
+            ["@chakra-ui/system", null],
+            ["@types/chakra-ui__system", null],
+            ["@types/react", "npm:16.14.2"],
+            ["react", "npm:16.14.0"]
+          ],
+          "packagePeers": [
+            "@chakra-ui/system",
+            "@types/chakra-ui__system",
+            "@types/react",
             "react"
           ],
           "linkType": "HARD",
@@ -858,31 +3352,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/image", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -895,31 +3373,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/input", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/form-control", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -932,31 +3394,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/layout", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -967,28 +3413,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@chakra-ui-live-region-virtual-02e60b31f1/0/cache/@chakra-ui-live-region-npm-1.0.1-b911e2ae82-9ef75e1d59.zip/node_modules/@chakra-ui/live-region/",
           "packageDependencies": [
             ["@chakra-ui/live-region", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1001,34 +3431,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/media-query", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/theme", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.1.0"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
             ["@types/chakra-ui__theme", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
             "@chakra-ui/theme",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
             "@types/chakra-ui__theme",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:efda6e1bafae58dfd7b2fe5a24dc5983d5fae0536f3ff6f593a6c444254159c8e3c5f65aa4a767b81b1e937bc7746bf10b3d12ff74702b0243eff2e34d63e29b#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-media-query-virtual-21404fdfff/0/cache/@chakra-ui-media-query-npm-1.0.1-fde3ed910c-13f6b2fc13.zip/node_modules/@chakra-ui/media-query/",
+          "packageDependencies": [
+            ["@chakra-ui/media-query", "virtual:efda6e1bafae58dfd7b2fe5a24dc5983d5fae0536f3ff6f593a6c444254159c8e3c5f65aa4a767b81b1e937bc7746bf10b3d12ff74702b0243eff2e34d63e29b#npm:1.0.1"],
+            ["@chakra-ui/system", "virtual:efda6e1bafae58dfd7b2fe5a24dc5983d5fae0536f3ff6f593a6c444254159c8e3c5f65aa4a767b81b1e937bc7746bf10b3d12ff74702b0243eff2e34d63e29b#npm:1.0.1"],
+            ["@chakra-ui/theme", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
+            ["@types/chakra-ui__system", null],
+            ["@types/chakra-ui__theme", null],
+            ["@types/react", "npm:16.14.2"],
+            ["react", "npm:16.14.0"]
+          ],
+          "packagePeers": [
+            "@chakra-ui/system",
+            "@chakra-ui/theme",
+            "@types/chakra-ui__system",
+            "@types/chakra-ui__theme",
+            "@types/react",
             "react"
           ],
           "linkType": "HARD",
@@ -1045,31 +3481,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/popper", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/transition", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
             ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
             "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
             "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1086,33 +3510,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/portal", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/transition", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
             ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["aria-hidden", "npm:1.1.1"],
             ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"],
             ["react-remove-scroll", "virtual:b0ebc65ceb387b0e44554718c406c0e28c4fadd384a4ded795f3f3a12c7f115f9f961fbd1ebb61bf9df65e781834f03d8726a7563453bebbb2db8aede05e6024#npm:2.4.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
             "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
             "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1127,31 +3539,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1165,31 +3561,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/descendant", "virtual:f362047dfb3951026e2ff97df7b9578dcc3d25227c134b59e214be1fe8b101efd466a14c658820b60ebc31fb6a06a42745f62c48205256a4b1cd960a17d1322b#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1206,31 +3586,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/portal", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/transition", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
             ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
             "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
             "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1242,30 +3610,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/popper", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@popperjs/core", "npm:2.4.4"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["dequal", "npm:2.0.2"],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1277,27 +3629,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/portal", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/react", "npm:16.14.2"],
             ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react-dom", null]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
             "@types/react-dom",
             "@types/react",
-            "framer-motion",
             "react-dom",
             "react"
           ],
@@ -1311,31 +3651,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/progress", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/theme-tools", "virtual:288a8f05175c16b650947a14f7619660f262debec03e6342a402c584925f7ae0602ab7b1428a1b553c82d98f1e969a311ecb11c65b4a36375c99f16896cd6790#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1348,32 +3672,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/radio", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@chakra-ui/visually-hidden", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1426,7 +3734,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/toast", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/tooltip", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/transition", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@chakra-ui/visually-hidden", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
             ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
@@ -1434,10 +3742,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/emotion__styled", null],
             ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@emotion/react",
@@ -1445,10 +3751,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/emotion__react",
             "@types/emotion__styled",
             "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
             "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1461,31 +3765,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/select", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/form-control", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1497,34 +3785,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/skeleton", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/media-query", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/theme", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.1.0"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/chakra-ui__theme", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
+            ["@chakra-ui/media-query", "virtual:efda6e1bafae58dfd7b2fe5a24dc5983d5fae0536f3ff6f593a6c444254159c8e3c5f65aa4a767b81b1e937bc7746bf10b3d12ff74702b0243eff2e34d63e29b#npm:1.0.1"],
+            ["@chakra-ui/system", "virtual:efda6e1bafae58dfd7b2fe5a24dc5983d5fae0536f3ff6f593a6c444254159c8e3c5f65aa4a767b81b1e937bc7746bf10b3d12ff74702b0243eff2e34d63e29b#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@chakra-ui/theme",
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/chakra-ui__theme",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1537,31 +3805,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/slider", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1573,32 +3825,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/spinner", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@chakra-ui/visually-hidden", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1611,67 +3847,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/stat", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@chakra-ui/visually-hidden", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@chakra-ui/styled-system", [
-        ["virtual:c43179ff2fb6eeb1edd4f622f166f4c9d83edef20024c7cdf5d123de936e7ce6cea32a56bc3c35446a51b2af6a5838823a1ceee74fac695d57c17c76b12c4c0c#npm:1.1.0", {
-          "packageLocation": "./.yarn/$$virtual/@chakra-ui-styled-system-virtual-ff83f1d525/0/cache/@chakra-ui-styled-system-npm-1.1.0-bfb9b0d413-09c1010a14.zip/node_modules/@chakra-ui/styled-system/",
+        ["virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.1.0", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-styled-system-virtual-b425f01ebd/0/cache/@chakra-ui-styled-system-npm-1.1.0-bfb9b0d413-09c1010a14.zip/node_modules/@chakra-ui/styled-system/",
           "packageDependencies": [
-            ["@chakra-ui/styled-system", "virtual:c43179ff2fb6eeb1edd4f622f166f4c9d83edef20024c7cdf5d123de936e7ce6cea32a56bc3c35446a51b2af6a5838823a1ceee74fac695d57c17c76b12c4c0c#npm:1.1.0"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/styled-system", "virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.1.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@styled-system/core", "npm:5.1.2"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["css-get-unit", "npm:1.0.1"],
             ["csstype", "npm:3.0.3"],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1682,33 +3886,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@chakra-ui-switch-virtual-898511336f/0/cache/@chakra-ui-switch-npm-1.0.1-77204133cb-5144c674a8.zip/node_modules/@chakra-ui/switch/",
           "packageDependencies": [
             ["@chakra-ui/switch", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/checkbox", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/checkbox", "virtual:898511336fb1d537b2e1f10ec07909051743d281fdd926fc138d9a697eb17616f89675481f241c4792acad45d71357f56f9a9e03965a48d8d00b735f52409f47#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1719,19 +3907,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/@chakra-ui-system-virtual-c43179ff2f/0/cache/@chakra-ui-system-npm-1.0.1-03764534f4-45b90e6d58.zip/node_modules/@chakra-ui/system/",
           "packageDependencies": [
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/color-mode", "virtual:c43179ff2fb6eeb1edd4f622f166f4c9d83edef20024c7cdf5d123de936e7ce6cea32a56bc3c35446a51b2af6a5838823a1ceee74fac695d57c17c76b12c4c0c#npm:1.0.1"],
-            ["@chakra-ui/styled-system", "virtual:c43179ff2fb6eeb1edd4f622f166f4c9d83edef20024c7cdf5d123de936e7ce6cea32a56bc3c35446a51b2af6a5838823a1ceee74fac695d57c17c76b12c4c0c#npm:1.1.0"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/color-mode", "virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.0.1"],
+            ["@chakra-ui/styled-system", "virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.1.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
             ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
             ["@types/emotion__react", null],
             ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"],
             ["react-fast-compare", "npm:3.2.0"]
           ],
           "packagePeers": [
@@ -1739,11 +3923,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@emotion/styled",
             "@types/emotion__react",
             "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:efda6e1bafae58dfd7b2fe5a24dc5983d5fae0536f3ff6f593a6c444254159c8e3c5f65aa4a767b81b1e937bc7746bf10b3d12ff74702b0243eff2e34d63e29b#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-system-virtual-d8d9bfc7af/0/cache/@chakra-ui-system-npm-1.0.1-03764534f4-45b90e6d58.zip/node_modules/@chakra-ui/system/",
+          "packageDependencies": [
+            ["@chakra-ui/system", "virtual:efda6e1bafae58dfd7b2fe5a24dc5983d5fae0536f3ff6f593a6c444254159c8e3c5f65aa4a767b81b1e937bc7746bf10b3d12ff74702b0243eff2e34d63e29b#npm:1.0.1"],
+            ["@chakra-ui/color-mode", "virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.0.1"],
+            ["@chakra-ui/styled-system", "virtual:d8d9bfc7afc57ade38b0dc069f2776395b346a5e8e65d177ca39e3930dd08af8f5c290816fdce538af89abfc9897cabb16b4a76f6fe8b86fc5fb8d6dcab39c2f#npm:1.1.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
+            ["@emotion/react", null],
+            ["@emotion/styled", null],
+            ["@types/emotion__react", null],
+            ["@types/emotion__styled", null],
+            ["@types/react", "npm:16.14.2"],
+            ["react", "npm:16.14.0"],
+            ["react-fast-compare", "npm:3.2.0"]
+          ],
+          "packagePeers": [
+            "@emotion/react",
+            "@emotion/styled",
+            "@types/emotion__react",
+            "@types/emotion__styled",
+            "@types/react",
             "react"
           ],
           "linkType": "HARD",
@@ -1758,31 +3963,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/descendant", "virtual:f362047dfb3951026e2ff97df7b9578dcc3d25227c134b59e214be1fe8b101efd466a14c658820b60ebc31fb6a06a42745f62c48205256a4b1cd960a17d1322b#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1795,31 +3984,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/tag", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/icon", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1832,31 +4005,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/textarea", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/form-control", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -1869,31 +4026,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/theme", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.1.0"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/theme-tools", "virtual:288a8f05175c16b650947a14f7619660f262debec03e6342a402c584925f7ae0602ab7b1428a1b553c82d98f1e969a311ecb11c65b4a36375c99f16896cd6790#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
-            ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["@types/chakra-ui__system", null]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
-            "@types/react",
-            "framer-motion",
-            "react-dom",
-            "react"
+            "@types/chakra-ui__system"
           ],
           "linkType": "HARD",
         }]
@@ -1904,34 +4041,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/theme-tools", "virtual:288a8f05175c16b650947a14f7619660f262debec03e6342a402c584925f7ae0602ab7b1428a1b553c82d98f1e969a311ecb11c65b4a36375c99f16896cd6790#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:7a90136c630a1b318faff04ede8a4e0f1abaa11892c4fcae8009842614acfea0c4c5584154e7d9111fabdd3cff2b62fd79273b09ff857bd9a93d6c0c858560cd#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
-            ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["@types/tinycolor2", "npm:1.4.2"],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"],
             ["tinycolor2", "npm:1.4.2"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
-            "@types/react",
-            "framer-motion",
-            "react-dom",
-            "react"
+            "@types/chakra-ui__system"
           ],
           "linkType": "HARD",
         }]
@@ -1947,27 +4064,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/theme", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.1.0"],
             ["@chakra-ui/transition", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@reach/alert", "virtual:82ee5b8958fd09ead0040ed71ea9b72c8d071ea98d6a410c2df51cd3db20db2d6e8ecbdfb6d0ec658688f6f6b04d8f08de85f9e99dccf80b67cd62722cb554e2#npm:0.11.0"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
             ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
             ["@types/react-dom", null],
             ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react-dom", null]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
             "@types/framer-motion",
             "@types/react-dom",
             "@types/react",
@@ -1987,32 +4096,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@chakra-ui/popper", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/portal", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@chakra-ui/visually-hidden", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
             ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
             "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
             "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -2024,64 +4121,73 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/transition", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
             "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
             "framer-motion",
-            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:f362047dfb3951026e2ff97df7b9578dcc3d25227c134b59e214be1fe8b101efd466a14c658820b60ebc31fb6a06a42745f62c48205256a4b1cd960a17d1322b#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-transition-virtual-e4add9b0b5/0/cache/@chakra-ui-transition-npm-1.0.1-e2856eb268-c68b46b90a.zip/node_modules/@chakra-ui/transition/",
+          "packageDependencies": [
+            ["@chakra-ui/transition", "virtual:f362047dfb3951026e2ff97df7b9578dcc3d25227c134b59e214be1fe8b101efd466a14c658820b60ebc31fb6a06a42745f62c48205256a4b1cd960a17d1322b#npm:1.0.1"],
+            ["@chakra-ui/hooks", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
+            ["@types/framer-motion", null],
+            ["@types/react", "npm:16.14.2"],
+            ["framer-motion", null],
+            ["react", "npm:16.14.0"]
+          ],
+          "packagePeers": [
+            "@types/framer-motion",
+            "@types/react",
+            "framer-motion",
             "react"
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@chakra-ui/utils", [
-        ["virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1", {
-          "packageLocation": "./.yarn/$$virtual/@chakra-ui-utils-virtual-bb5f350b58/0/cache/@chakra-ui-utils-npm-1.0.1-0d1bd02e64-b1da339fa6.zip/node_modules/@chakra-ui/utils/",
+        ["virtual:7a90136c630a1b318faff04ede8a4e0f1abaa11892c4fcae8009842614acfea0c4c5584154e7d9111fabdd3cff2b62fd79273b09ff857bd9a93d6c0c858560cd#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-utils-virtual-785c378993/0/cache/@chakra-ui-utils-npm-1.0.1-0d1bd02e64-b1da339fa6.zip/node_modules/@chakra-ui/utils/",
           "packageDependencies": [
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
+            ["@chakra-ui/utils", "virtual:7a90136c630a1b318faff04ede8a4e0f1abaa11892c4fcae8009842614acfea0c4c5584154e7d9111fabdd3cff2b62fd79273b09ff857bd9a93d6c0c858560cd#npm:1.0.1"],
+            ["@types/lodash.mergewith", "npm:4.6.6"],
+            ["@types/object-assign", "npm:4.0.30"],
+            ["@types/react", null],
+            ["css-box-model", "npm:1.2.1"],
+            ["lodash.mergewith", "npm:4.6.2"],
+            ["object-assign", "npm:4.1.1"],
+            ["react", null]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@chakra-ui-utils-virtual-1e9783831f/0/cache/@chakra-ui-utils-npm-1.0.1-0d1bd02e64-b1da339fa6.zip/node_modules/@chakra-ui/utils/",
+          "packageDependencies": [
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/lodash.mergewith", "npm:4.6.6"],
             ["@types/object-assign", "npm:4.0.30"],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
             ["css-box-model", "npm:1.2.1"],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
             ["lodash.mergewith", "npm:4.6.2"],
             ["object-assign", "npm:4.1.1"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
-            "@emotion/react",
-            "@emotion/styled",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -2093,31 +4199,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@chakra-ui/visually-hidden", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
             ["@chakra-ui/system", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@chakra-ui/utils", "virtual:16254d15e8036d966938625fdb5a0803834912b835d700f1f0b4822668135de82a498ac89a153959bc0a72f3083426bc09765b740cbcc329d234f0c3880c9df6#npm:1.0.1"],
-            ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
-            ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],
+            ["@chakra-ui/utils", "virtual:c40971d47e4ff0a1d607149f579447314aa3de3fbd3f3d15d2278c90e15719433f1d84da9dc42ef0cb9319a8a8d348b7ef4b7feae8aefa0de30646c27b051273#npm:1.0.1"],
             ["@types/chakra-ui__system", null],
-            ["@types/emotion__react", null],
-            ["@types/emotion__styled", null],
-            ["@types/framer-motion", null],
             ["@types/react", "npm:16.14.2"],
-            ["@types/react-dom", null],
-            ["framer-motion", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:2.9.4"],
-            ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"]
+            ["react", "npm:16.14.0"]
           ],
           "packagePeers": [
             "@chakra-ui/system",
-            "@emotion/react",
-            "@emotion/styled",
             "@types/chakra-ui__system",
-            "@types/emotion__react",
-            "@types/emotion__styled",
-            "@types/framer-motion",
-            "@types/react-dom",
             "@types/react",
-            "framer-motion",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
@@ -2455,7 +4545,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", null],
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"],
+            ["react-dom", null],
             ["tslib", "npm:2.0.3"]
           ],
           "packagePeers": [
@@ -2476,7 +4566,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:16.14.2"],
             ["@types/react-dom", null],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"],
+            ["react-dom", null],
             ["tslib", "npm:2.0.3"]
           ],
           "packagePeers": [
@@ -2497,7 +4587,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", null],
             ["@types/warning", "npm:3.0.0"],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"],
+            ["react-dom", null],
             ["tslib", "npm:2.0.3"],
             ["warning", "npm:4.0.3"]
           ],
@@ -2518,7 +4608,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:16.14.2"],
             ["@types/react-dom", null],
             ["react", "npm:16.14.0"],
-            ["react-dom", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:16.14.0"],
+            ["react-dom", null],
             ["tslib", "npm:2.0.3"]
           ],
           "packagePeers": [
@@ -7470,6 +9560,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/portfolio/",
           "packageDependencies": [
             ["portfolio", "workspace:apps/portfolio"],
+            ["@chakra-ui/icons", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:1.0.1"],
             ["@chakra-ui/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:1.0.1"],
             ["@emotion/react", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.1.1"],
             ["@emotion/styled", "virtual:6296b5dbb1ebdd3ba7f815f1e4222af5585858fc533bc82695843cadc6352d0bf3fc169dc1d07af11eef815e11d918ea1cd68f170beaccd838d91e5468a095a8#npm:11.0.0"],

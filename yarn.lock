@@ -384,6 +384,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/icons@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@chakra-ui/icons@npm:1.0.1"
+  dependencies:
+    "@chakra-ui/icon": 1.0.1
+    "@types/react": ^16.9.53
+  peerDependencies:
+    "@chakra-ui/system": ">=1.0.0"
+    react: 16.x || 17.x
+  checksum: 4b8a30bd52c35d5761a074c3629eb2e699b23d4ce92ef2c13f92291b6adf0d08f599ae9b5cb9b11adf594d3eaeb150492bef9269938e800f36e926ce360ea0a0
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/image@npm:1.0.1":
   version: 1.0.1
   resolution: "@chakra-ui/image@npm:1.0.1"
@@ -737,7 +750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/system@npm:1.0.1":
+"@chakra-ui/system@npm:1.0.1, @chakra-ui/system@npm:^1.0.1":
   version: 1.0.1
   resolution: "@chakra-ui/system@npm:1.0.1"
   dependencies:
@@ -1272,7 +1285,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^16.14.0":
+"@types/react@npm:^16.14.0, @types/react@npm:^16.9.53":
   version: 16.14.2
   resolution: "@types/react@npm:16.14.2"
   dependencies:
@@ -5629,7 +5642,9 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:apps/portfolio"
   dependencies:
+    "@chakra-ui/icons": ^1.0.1
     "@chakra-ui/react": ^1.0.1
+    "@chakra-ui/system": ^1.0.1
     "@emotion/react": ^11.1.1
     "@emotion/styled": ^11.0.0
     "@types/node": ^14.14.10

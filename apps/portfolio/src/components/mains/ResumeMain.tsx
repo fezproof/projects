@@ -2,7 +2,7 @@ import { Box, Grid, Heading, Text } from '@chakra-ui/react';
 import { FC } from 'react';
 import BasicCard from 'src/components/BasicCard';
 
-const HomeMain: FC = () => (
+const ResumeMain: FC = () => (
   <Box>
     <BasicCard>
       <Heading as="h3" size="md" mb="0.5rem">
@@ -111,4 +111,4 @@ const HomeMain: FC = () => (
   </Box>
 );
 
-export default HomeMain;
+export default ResumeMain;

@@ -1,9 +1,9 @@
 import { Box, Button, Container, Grid, useColorMode } from '@chakra-ui/react';
 import Head from 'next/head';
-import HomeHeader from 'src/components/headers/HomeHeader';
+import ResumeHeader from 'src/components/headers/ResumeHeader';
 import PrintHidden from 'src/components/helpers/PrintHidden';
-import HomeAside from 'src/components/asides/HomeAside';
-import HomeMain from 'src/components/mains/HomeMain';
+import ResumeAside from 'src/components/asides/ResumeAside';
+import ResumeMain from 'src/components/mains/ResumeMain';
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -34,13 +34,13 @@ export default function Home() {
           gap="1rem"
         >
           <Box as="header" gridArea="header">
-            <HomeHeader />
+            <ResumeHeader />
           </Box>
           <Box as="aside" gridArea="aside">
-            <HomeAside />
+            <ResumeAside />
           </Box>
           <Box as="main" gridArea="main">
-            <HomeMain />
+            <ResumeMain />
           </Box>
           {/* <Box as="footer" gridArea="footer"></Box> */}
         </Grid>

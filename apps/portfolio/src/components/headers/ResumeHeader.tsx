@@ -3,7 +3,7 @@ import { PhoneIcon, EmailIcon, SettingsIcon } from '@chakra-ui/icons';
 import { FC } from 'react';
 import BasicCard from 'src/components/BasicCard';
 
-const HomeHeader: FC = () => (
+const ResumeHeader: FC = () => (
   <Grid gap="1rem">
     <BasicCard>
       <Box pb="1rem">
@@ -35,4 +35,4 @@ const HomeHeader: FC = () => (
   </Grid>
 );
 
-export default HomeHeader;
+export default ResumeHeader;

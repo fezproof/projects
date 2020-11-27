@@ -10,7 +10,7 @@ const SkillGauge: FC<{ value: number; title: string }> = ({ value, title }) => (
   </VStack>
 );
 
-const HomeAside: FC = () => (
+const ResumeAside: FC = () => (
   <Box>
     <BasicCard>
       <Heading size="sm" mb="0.5rem">
@@ -41,4 +41,4 @@ const HomeAside: FC = () => (
   </Box>
 );
 
-export default HomeAside;
+export default ResumeAside;

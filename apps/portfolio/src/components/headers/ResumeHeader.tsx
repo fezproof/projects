@@ -4,7 +4,7 @@ import { FC } from 'react';
 import BasicCard from 'src/components/BasicCard';
 
 const ResumeHeader: FC = () => (
-  <Grid gap="1rem">
+  <Grid gap="1rem" height="100%">
     <BasicCard>
       <Box pb="1rem">
         <Heading as="h1">Ben Chidlow</Heading>

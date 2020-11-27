@@ -1,9 +1,18 @@
-import { Box, Button, Container, Grid, useColorMode } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  Heading,
+  useColorMode,
+} from '@chakra-ui/react';
 import Head from 'next/head';
 import ResumeHeader from 'src/components/headers/ResumeHeader';
 import PrintHidden from 'src/components/helpers/PrintHidden';
 import ResumeAside from 'src/components/asides/ResumeAside';
 import ResumeMain from 'src/components/mains/ResumeMain';
+import BasicCard from 'src/components/BasicCard';
+import ResumeFooter from 'src/components/footers/ResumeFooter';
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -24,14 +33,17 @@ export default function Home() {
           toggle {colorMode === 'light' ? 'dark' : 'light'}
         </Button>
       </PrintHidden>
-      <Container maxW="lg" py="1rem">
+      <Container maxW="lg" py="1rem" h="100vh">
         <Grid
           templateAreas={`
             "header main"
             "aside main"
+            "aside footer"
           `}
           gridTemplateColumns="15rem auto"
           gap="1rem"
+          gridAutoRows="min-content"
+          h="100%"
         >
           <Box as="header" gridArea="header">
             <ResumeHeader />
@@ -42,7 +54,9 @@ export default function Home() {
           <Box as="main" gridArea="main">
             <ResumeMain />
           </Box>
-          {/* <Box as="footer" gridArea="footer"></Box> */}
+          <Box as="footer" gridArea="footer">
+            <ResumeFooter />
+          </Box>
         </Grid>
       </Container>
     </div>

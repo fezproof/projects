@@ -10,13 +10,13 @@ const SkillGauge: FC<{ value: number; title: string }> = ({ value, title }) => (
   </VStack>
 );
 
-const HomeAside: FC = () => (
-  <Box>
+const ResumeAside: FC = () => (
+  <Grid gap="1rem" h="100%">
     <BasicCard>
       <Heading size="sm" mb="0.5rem">
         Hard Skills
       </Heading>
-      <Grid templateColumns="1fr 1fr" gap="0.75rem" my="1rem">
+      <Grid templateColumns="1fr 1fr" gap="0.75rem" mt="1rem">
         <SkillGauge value={100} title="React" />
         <SkillGauge value={100} title="Node" />
         <SkillGauge value={100} title="JavaScript" />
@@ -27,18 +27,18 @@ const HomeAside: FC = () => (
         <SkillGauge value={50} title="C#" />
       </Grid>
     </BasicCard>
-    <BasicCard my="1rem">
+    <BasicCard>
       <Heading size="sm" my="0.5rem">
         Soft Skills
       </Heading>
-      <Grid templateColumns="1fr 1fr" gap="0.75rem" my="1rem">
+      <Grid templateColumns="1fr 1fr" gap="0.75rem" mt="1rem">
         <SkillGauge value={100} title="Problem Solving" />
         <SkillGauge value={90} title="Teamwork" />
         <SkillGauge value={80} title="Leadership" />
         <SkillGauge value={70} title="Agile" />
       </Grid>
     </BasicCard>
-  </Box>
+  </Grid>
 );
 
-export default HomeAside;
+export default ResumeAside;

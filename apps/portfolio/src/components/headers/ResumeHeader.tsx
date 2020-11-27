@@ -3,8 +3,8 @@ import { PhoneIcon, EmailIcon, SettingsIcon } from '@chakra-ui/icons';
 import { FC } from 'react';
 import BasicCard from 'src/components/BasicCard';
 
-const HomeHeader: FC = () => (
-  <Grid gap="1rem">
+const ResumeHeader: FC = () => (
+  <Grid gap="1rem" height="100%">
     <BasicCard>
       <Box pb="1rem">
         <Heading as="h1">Ben Chidlow</Heading>
@@ -35,4 +35,4 @@ const HomeHeader: FC = () => (
   </Grid>
 );
 
-export default HomeHeader;
+export default ResumeHeader;

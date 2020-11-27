@@ -28,9 +28,7 @@ export default function Home() {
         <Grid
           templateAreas={`
             "header main"
-            "header main"
             "aside main"
-            "footer footer"
           `}
           gridTemplateColumns="15rem auto"
           gap="1rem"
@@ -44,7 +42,7 @@ export default function Home() {
           <Box as="main" gridArea="main">
             <HomeMain />
           </Box>
-          <Box as="footer" gridArea="footer"></Box>
+          {/* <Box as="footer" gridArea="footer"></Box> */}
         </Grid>
       </Container>
     </div>

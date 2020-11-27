@@ -14,7 +14,7 @@ const HomeMain: FC = () => (
             Woodside Technology
           </Heading>
           <Text>
-            Help lead and development of an asset visualisation platform
+            Help lead and develop an asset visualisation platform
           </Text>
           <Text>
             This involved full stack technical and niche web development, WebGL,
@@ -26,7 +26,7 @@ const HomeMain: FC = () => (
             East Metro Health
           </Heading>
           <Text>
-            A fast, error resistant patiant onboarding app to help triage during
+            A fast, error resistant patient onboarding app to help triage during
             the COVID-19 pandemic
           </Text>
           <Text>
@@ -40,7 +40,7 @@ const HomeMain: FC = () => (
           </Heading>
           <Text>
             An internal, company wide GraphQL service that encouraged innovation
-            and cross cutting concerns in all of Purples internal apps
+            and cross cutting concerns in all of Purple's internal apps
           </Text>
         </Box>
         <Box>
@@ -64,7 +64,7 @@ const HomeMain: FC = () => (
             Developed the frontend for a rural community connector site
           </Text>
           <Text>
-            The web app had to be extremely lightweight and tolerent bad or loss
+            The web app had to be extremely lightweight and tolerant bad or loss
             of internet connection
           </Text>
         </Box>
@@ -89,7 +89,7 @@ const HomeMain: FC = () => (
               Graduate Consultant
             </Heading>
             <Text>Telstra Purple</Text>
-            <Text>Jan 2019 to Dec 2020</Text>
+            <Text>Jan 2019 to Dec 2019</Text>
           </Box>
         </Grid>
       </BasicCard>

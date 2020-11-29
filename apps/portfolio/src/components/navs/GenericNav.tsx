@@ -4,11 +4,13 @@ import ColourModeToggle from '../ColourModeToggle';
 import PrintHidden from '../helpers/PrintHidden';
 
 const GenericNav = chakra(({ className }) => {
-  const bg = useColorModeValue('cyan.100', 'cyan.800');
+  const bg = useColorModeValue('white.50', 'gray.800');
   return (
     <PrintHidden className={className}>
       <Box
         as="nav"
+        borderRight={{ base: 'none', lg: '1px' }}
+        borderTop={{ base: '1px', lg: 'none' }}
         display="flex"
         alignItems="center"
         backgroundColor={bg}

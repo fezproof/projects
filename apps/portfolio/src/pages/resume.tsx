@@ -8,7 +8,7 @@ import ResumeLayout from 'src/layouts/ResumeLayout';
 const Resume = () => {
   return (
     <ResumeLayout>
-      <Container maxW="lg" py="1rem">
+      <Container maxW="lg" p="1rem">
         <Grid
           templateAreas={`
             "header main"

@@ -15,8 +15,8 @@ const ResumeLayout: FC = ({ children }) => (
     </Head>
 
     <Grid
-      gridTemplateColumns={{ base: 'auto', lg: '6rem auto' }}
-      gridTemplateRows={{ base: '0 auto 5rem', lg: 'auto' }}
+      gridTemplateColumns={{ base: 'auto', lg: '6.5rem auto' }}
+      gridTemplateRows={{ base: '0 auto 4rem', lg: 'auto' }}
     >
       <GenericNav />
       {Children.only(children)}

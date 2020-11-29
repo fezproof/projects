@@ -8,6 +8,7 @@ const ColourModeToggle = chakra(({ className }) => {
     <IconButton
       aria-label="Toggle colour mode"
       onClick={toggleColorMode}
+      variant="ghost"
       icon={isDarkMode ? <SunIcon /> : <MoonIcon />}
       className={className}
     />

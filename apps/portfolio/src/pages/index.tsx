@@ -46,18 +46,18 @@ export default function Home() {
           <Heading as="h2">Under Construction!</Heading>
         </VStack>
 
-        <VStack VStack py="1.5rem">
+        <VStack py="1.5rem">
           <Heading as="h3" size="sm">
             Some things do exist though, but I still have a lot of work to do!
           </Heading>
 
           <HStack>
-            <RouterLink href="/resume">
+            <RouterLink passHref href="/resume">
               <Button as="a" variant="solid">
                 Resumé
               </Button>
             </RouterLink>
-            <RouterLink href="/blog">
+            <RouterLink passHref href="/blog">
               <Button as="a" variant="solid" isDisabled>
                 Blog
               </Button>

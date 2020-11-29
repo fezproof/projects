@@ -1,30 +1,14 @@
-import { Box, Container, Grid, useColorMode } from '@chakra-ui/react';
-import Head from 'next/head';
+import { Box, Container, Grid } from '@chakra-ui/react';
 import ResumeAside from 'src/components/asides/ResumeAside';
-import ColourModeToggle from 'src/components/ColourModeToggle';
 import ResumeFooter from 'src/components/footers/ResumeFooter';
 import ResumeHeader from 'src/components/headers/ResumeHeader';
-import PrintHidden from 'src/components/helpers/PrintHidden';
 import ResumeMain from 'src/components/mains/ResumeMain';
+import ResumeLayout from 'src/layouts/ResumeLayout';
 
-export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode();
-
+const Resume = () => {
   return (
-    <div>
-      <Head>
-        <title>Ben Chidlow - Resume</title>
-        <link rel="icon" href="/favicon.png" />
-        <meta
-          name="description"
-          content="Ben Chidlow's personal resume. Should be ready to print straight away!"
-        />
-      </Head>
-
-      <PrintHidden>
-        <ColourModeToggle />
-      </PrintHidden>
-      <Container maxW="lg" py="1rem" h="100vh">
+    <ResumeLayout>
+      <Container maxW="lg" py="1rem">
         <Grid
           templateAreas={`
             "header main"
@@ -50,6 +34,8 @@ export default function Home() {
           </Box>
         </Grid>
       </Container>
-    </div>
+    </ResumeLayout>
   );
-}
+};
+
+export default Resume;

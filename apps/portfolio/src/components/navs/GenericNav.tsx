@@ -14,11 +14,11 @@ const GenericNav = chakra(({ className }) => {
         zIndex="10"
         bottom="0"
         left="0"
-        top={{ base: 'auto', lg: '0' }}
-        right={{ base: '0', lg: 'auto' }}
+        top="auto"
+        right="0"
         p="0.5rem"
-        width={{ base: '100%', lg: 'auto' }}
-        height={{ base: 'auto', lg: '100%' }}
+        width="100%"
+        height="auto"
       >
         <Grid
           gap="0.5rem"
@@ -26,11 +26,11 @@ const GenericNav = chakra(({ className }) => {
           borderRadius="lg"
           as="nav"
           alignContent="center"
-          gridAutoFlow={{ base: 'column', lg: 'row' }}
-          gridTemplateColumns={{ base: 'none', lg: '1fr' }}
-          gridAutoRows={{ base: '1fr', lg: 'none' }}
-          my={{ base: '0', lg: 'auto' }}
-          mx={{ base: 'auto', lg: '0' }}
+          gridAutoFlow="column"
+          gridTemplateColumns="none"
+          gridAutoRows="1fr"
+          my="0"
+          mx="auto"
           p="0.5rem"
         >
           <Link passHref href="/">
@@ -41,6 +41,11 @@ const GenericNav = chakra(({ className }) => {
           <Link passHref href="/resume">
             <Button variant="ghost" as="a">
               Resumé
+            </Button>
+          </Link>
+          <Link passHref href="/blog">
+            <Button variant="ghost" isDisabled as="a">
+              Blog
             </Button>
           </Link>
           <ColourModeToggle />

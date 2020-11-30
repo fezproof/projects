@@ -1,48 +1,38 @@
-import {
-  Box,
-  Button,
-  Container,
-  Grid,
-  Heading,
-  useColorMode,
-} from '@chakra-ui/react';
-import Head from 'next/head';
-import ResumeHeader from 'src/components/headers/ResumeHeader';
-import PrintHidden from 'src/components/helpers/PrintHidden';
+import { Box, Container, Grid, useMediaQuery } from '@chakra-ui/react';
+
 import ResumeAside from 'src/components/asides/ResumeAside';
-import ResumeMain from 'src/components/mains/ResumeMain';
-import BasicCard from 'src/components/BasicCard';
 import ResumeFooter from 'src/components/footers/ResumeFooter';
+import ResumeHeader from 'src/components/headers/ResumeHeader';
+import ResumeMain from 'src/components/mains/ResumeMain';
+import ResumeLayout from 'src/layouts/ResumeLayout';
 
-export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode();
-
+const Resume = () => {
+  const [isPrint] = useMediaQuery('print');
   return (
-    <div>
-      <Head>
-        <title>Ben Chidlow - Resume</title>
-        <link rel="icon" href="/favicon.png" />
-        <meta
-          name="description"
-          content="Ben Chidlow's personal resume. Should be ready to print straight away!"
-        />
-      </Head>
-
-      <PrintHidden>
-        <Button onClick={toggleColorMode} textTransform="uppercase">
-          toggle {colorMode === 'light' ? 'dark' : 'light'}
-        </Button>
-      </PrintHidden>
-      <Container maxW="lg" py="1rem" h="100vh">
+    <ResumeLayout>
+      <Container maxW="lg" p="1rem">
         <Grid
-          templateAreas={`
-            "header main"
-            "aside main"
-            "aside footer"
-          `}
-          gridTemplateColumns="15rem auto"
+          gridTemplateAreas={[
+            isPrint
+              ? `
+                  "header main"
+                  "aside main"
+                  "aside footer"
+                `
+              : `
+                  "header"
+                  "main"
+                  "aside"
+                  "footer"
+                `,
+            `
+              "header main"
+              "aside main"
+              "aside footer"
+            `,
+          ]}
+          gridTemplateColumns={[isPrint ? '15rem auto' : 'auto', 'auto auto']}
           gap="1rem"
-          gridAutoRows="min-content"
           h="100%"
         >
           <Box as="header" gridArea="header">
@@ -59,6 +49,8 @@ export default function Home() {
           </Box>
         </Grid>
       </Container>
-    </div>
+    </ResumeLayout>
   );
-}
+};
+
+export default Resume;

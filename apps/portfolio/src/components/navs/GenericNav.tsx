@@ -43,11 +43,11 @@ const GenericNav = chakra(({ className }) => {
               Resumé
             </Button>
           </Link>
-          <Link passHref href="/blog">
-            <Button variant="ghost" isDisabled as="a">
-              Blog
-            </Button>
-          </Link>
+          {/* <Link passHref href="/blog"> */}
+          <Button variant="ghost" isDisabled as="a">
+            Blog
+          </Button>
+          {/* </Link> */}
           <ColourModeToggle />
         </Grid>
       </Box>

@@ -57,11 +57,11 @@ export default function Home() {
                 Resumé
               </Button>
             </RouterLink>
-            <RouterLink passHref href="/blog">
-              <Button as="a" variant="solid" isDisabled>
-                Blog
-              </Button>
-            </RouterLink>
+            {/* <RouterLink passHref href="/blog"> */}
+            <Button as="a" variant="solid" isDisabled>
+              Blog
+            </Button>
+            {/* </RouterLink> */}
           </HStack>
         </VStack>
       </Container>

@@ -10,6 +10,7 @@ import Head from 'next/head';
 import RouterLink from 'next/link';
 import Card from 'src/components/Card';
 import ColourModeToggle from 'src/components/ColourModeToggle';
+import StarrySky from 'src/components/StarrySky';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           content="Ben Chidlow's personal site. This includes his portfolio and resume"
         />
       </Head>
+      <StarrySky />
       <Container as="header" maxW="lg" my="2" display="flex" flexDir="row">
         <Box>
           <Heading as="h1">Ben Chidlow</Heading>

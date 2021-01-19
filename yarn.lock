@@ -3957,32 +3957,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^2.9.4":
-  version: 2.9.4
-  resolution: "framer-motion@npm:2.9.4"
+"framer-motion@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "framer-motion@npm:3.2.1"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
-    framesync: ^4.1.0
+    framesync: ^5.0.0
     hey-listen: ^1.0.8
-    popmotion: 9.0.0-rc.20
-    style-value-types: ^3.1.9
+    popmotion: ^9.1.0
+    style-value-types: ^4.0.1
     tslib: ^1.10.0
   peerDependencies:
-    react: ^16.8
-    react-dom: ^16.8
+    react: ">=16.8"
+    react-dom: ">=16.8"
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: 881506fc35b66b7f55aab957982e93cfe8d0e803f833c2af946722aaabd35f54ff37b0247489d85c709b8c7c59e74f2f49e79dc3866691734bf82fab2d1672ef
+  checksum: 6a21a6502edc589938fda78238144648d3ae9197d2fc8455f7ed825c85cbe85f641ef1cf5e2371dadb3017331c1abef8737c81587cb055f01b2f99b71025c98b
   languageName: node
   linkType: hard
 
-"framesync@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "framesync@npm:4.1.0"
-  dependencies:
-    hey-listen: ^1.0.5
-  checksum: b2a2a06e28a4323848fd48f7c36b4bc01c203a282ec351955d931d440befdbe88dd29e6bb13b36f064e8b62986daeb6be59609ee5ab55114f711677755d5210e
+"framesync@npm:5.0.0, framesync@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "framesync@npm:5.0.0"
+  checksum: 3ae984748abe03710b4a60f35534c572ffd206f773a58c5d61da56397f4656ff8de7bc41be7eb83a3eb961dd24e95f379147818dec1aefda4c005d50a45681d9
   languageName: node
   linkType: hard
 
@@ -4301,7 +4299,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"hey-listen@npm:^1.0.5, hey-listen@npm:^1.0.8":
+"hey-listen@npm:^1.0.8":
   version: 1.0.8
   resolution: "hey-listen@npm:1.0.8"
   checksum: b9a3ed8d4851735d221a8c2ecf06fba598b0240d18e7ad46780e00af1d62471a40c65d5c6ec48b004fc86d96056cf7e3599d3ef8ee77a31df3cb9f4ce69721ce
@@ -5890,15 +5888,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"popmotion@npm:9.0.0-rc.20":
-  version: 9.0.0-rc.20
-  resolution: "popmotion@npm:9.0.0-rc.20"
+"popmotion@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "popmotion@npm:9.1.0"
   dependencies:
-    framesync: ^4.1.0
+    framesync: 5.0.0
     hey-listen: ^1.0.8
-    style-value-types: ^3.1.9
+    style-value-types: ^4.0.1
     tslib: ^1.10.0
-  checksum: 06839ddc16eb995bc5327aee5cd624d09db9d19effe1abb7078adc5c417965adea580bc73ff5bd512a6949a97fb98c4e3b1e9fda9dd8bc1df96cb0e4f0680c3b
+  checksum: a8f0018217d85e0e0e0bbc82a224dad2494ae5a73b5b06208298fee0ea035d742e2707a6f41051d2f3662099cddf526a1425d8452c073df748c9dd77bb97f3d2
   languageName: node
   linkType: hard
 
@@ -5919,7 +5917,7 @@ fsevents@~2.1.2:
     "@visx/responsive": ^1.3.0
     "@visx/scale": ^1.4.0
     "@visx/shape": ^1.4.0
-    framer-motion: ^2.9.4
+    framer-motion: ^3.2.1
     next: 10.0.3
     react: ^16.14.0
     react-dom: ^16.14.0
@@ -7280,13 +7278,13 @@ resolve@^1.12.0:
   languageName: node
   linkType: hard
 
-"style-value-types@npm:^3.1.9":
-  version: 3.1.9
-  resolution: "style-value-types@npm:3.1.9"
+"style-value-types@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "style-value-types@npm:4.0.1"
   dependencies:
     hey-listen: ^1.0.8
     tslib: ^1.10.0
-  checksum: d49e6447576690fc6d8337c554c4d4b26b765e62bf91975494069db1320166e146fa255f1c6c0a7580e085db3dd42c43a2983405345eece57a1ffb1c6c3e39e0
+  checksum: ea10874c76075a65058edbf59299bbdcd86512d0a206c9e444f0234f0dab0b801cdfa19cb6984cc7c18b4fd93147811f32b39edb8192129922ce8bc2019e8327
   languageName: node
   linkType: hard
 

@@ -5,6 +5,7 @@ import { scaleLinear } from '@visx/scale';
 import genRandomNormalPoints, {
   PointsRange,
 } from '@visx/mock-data/lib/generators/genRandomNormalPoints';
+import { motion } from 'framer-motion';
 
 const x = ([d]: PointsRange) => d;
 const y = ([, d]: PointsRange) => d;
@@ -17,8 +18,6 @@ export type DotsProps = {
 
 const Stars: FC<DotsProps> = ({ width, height }) => {
   if (width < 10) return null;
-  console.log(width);
-
   const points = useMemo(() => {
     const count = Math.floor(width / 2);
     return genRandomNormalPoints(count).filter((_, i) => i < count);
@@ -54,7 +53,7 @@ const Stars: FC<DotsProps> = ({ width, height }) => {
   );
 
   return (
-    <Group pointerEvents="none">
+    <motion.g opacity="0" animate={{ opacity: 1 }}>
       {points.map((point, i) => {
         const cx = xScale(x(point));
         const cy = yScale(y(point));
@@ -73,7 +72,7 @@ const Stars: FC<DotsProps> = ({ width, height }) => {
           />
         );
       })}
-    </Group>
+    </motion.g>
   );
 };
 

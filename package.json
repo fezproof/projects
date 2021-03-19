@@ -1,12 +1,8 @@
 {
+  "private": true,
   "name": "@fez/projects",
   "version": "1.0.0",
-  "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
-    "test": "lerna run test",
-    "test:watch": "lerna run test:watch --parallel",
-    "build": "lerna run build"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fezproof/projects.git"
@@ -20,12 +16,14 @@
   "devDependencies": {
     "eslint": "^7.5.0",
     "prettier": "^2.0.5",
-    "typescript": "^4.0.1"
+    "typescript": "^4.1.1"
   },
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ]
+  },
   "dependenciesMeta": {
     "next@10.0.3": {
       "unplugged": true

@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'preact';
-import Header from '../components/Header';
+import Header from '../../components/Header';
 
 const PlayersPage: FunctionComponent = () => (
   <div>

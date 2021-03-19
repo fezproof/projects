@@ -5,13 +5,13 @@ import UserAvatar from './UserAvatar';
 const links = [
   { text: 'Players', to: '/players' },
   { text: 'Places', to: '/places' },
-  { text: 'Realms', to: '/realms' },
+  { text: 'Lands', to: '/lands' },
 ];
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
   return (
-    <nav class="bg-gray-800">
+    <nav class="bg-transparent fixed top-0 left-0 right-0">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -23,7 +23,6 @@ const Nav = () => {
               onClick={() => setNavOpen(!navOpen)}
             >
               <span class="sr-only">Open main menu</span>
-
               <svg
                 class="block h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"

@@ -8,13 +8,11 @@ import Router from './router';
 export function App() {
   return (
     <BrowserRouter>
-      <Nav />
+      {/* <Nav /> */}
 
-      <main>
-        <Suspense fallback={<Loading />}>
-          <Router />
-        </Suspense>
-      </main>
+      <Suspense fallback={<Loading />}>
+        <Router />
+      </Suspense>
     </BrowserRouter>
   );
 }

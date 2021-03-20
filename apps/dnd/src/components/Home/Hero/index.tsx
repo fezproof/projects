@@ -1,7 +1,7 @@
 import heroImage from '../../../images/hero2.jpg';
 
 const Hero = () => (
-  <div class="h-hero relative bg-gradient-to-b from-lightBlue-400 to-gray-100 py-16">
+  <div class="h-[95vh] relative bg-gradient-to-b from-lightBlue-400 to-gray-100 py-16">
     <div
       class="absolute top-0 left-0 right-0 bottom-1 bg-cover"
       style={{

@@ -7,9 +7,6 @@ module.exports = {
   theme: {
     extend: {
       colors: { ...colors, gray: colors.warmGray },
-      height: {
-        hero: '90vh',
-      },
       fontFamily: {
         serif: 'QuadraatOffcPro Demibold',
       },

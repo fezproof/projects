@@ -22,7 +22,7 @@ const blocksData = {
 };
 
 const typeDefs = gql`
-  type Block {
+  type Block @canonical {
     id: ID!
     content: [BlockContent]
     page: Page!
@@ -58,11 +58,10 @@ const resolvers = {
     _pages: (_, { keys }) => keys,
   },
   Page: {
-    blocks: ({ id }) => {
-      return Object.entries(blocksData)
+    blocks: ({ id }) =>
+      Object.entries(blocksData)
         .filter(([_, block]) => block.pageId === id)
-        .map(([blockId, block]) => ({ id: blockId, ...block }));
-    },
+        .map(([blockId, block]) => ({ id: blockId, ...block })),
   },
   Block: {
     page: ({ pageId }) => ({ id: pageId }),

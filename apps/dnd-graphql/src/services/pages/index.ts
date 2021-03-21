@@ -23,7 +23,7 @@ export const pagesData = {
 };
 
 const typeDefs = gql`
-  type Page {
+  type Page @canonical {
     id: ID!
     slug: String!
     type: String!

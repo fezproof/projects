@@ -8,14 +8,13 @@ const PlayerCard: FunctionComponent<Player> = ({
   class: playerClass,
   race,
 }) => (
-  <figure
-    style={{ backgroundColor: '#EFEEE9' }}
-    class="rounded-lg overflow-hidden w-full max-w-sm h-full border-solid border-8"
-  >
+  <figure class="rounded-lg overflow-hidden w-full max-w-sm bg-[#EFEEE9] h-full border-solid border-8">
     <div class="text-center h-full">
       <figcaption class="font-medium text-center mx-4 mt-6 h-32">
         <div class="text-gray-900 text-3xl">{name}</div>
-        <div class="text-gray-600">{race} {playerClass}</div>
+        <div class="text-gray-600">
+          {race} {playerClass}
+        </div>
       </figcaption>
       <img
         class="w-full h-96 lg:rounded-none rounded-full object-scale-down"

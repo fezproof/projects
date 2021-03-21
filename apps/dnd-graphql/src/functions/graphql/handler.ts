@@ -1,5 +1,5 @@
-import blocksSchema from '@functions/services/blocks';
-import pagesSchema from '@functions/services/pages';
+import blocksSchema from 'src/services/blocks';
+import pagesSchema from 'src/services/pages';
 import { stitchSchemas } from '@graphql-tools/stitch';
 import { ApolloServer } from 'apollo-server-lambda';
 import { stitchingDirectives } from '@graphql-tools/stitching-directives';

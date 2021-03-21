@@ -1,57 +1,25 @@
-import { ApolloServer, gql } from 'apollo-server-lambda';
+import blocksSchema from '@functions/services/blocks';
+import pagesSchema from '@functions/services/pages';
+import { stitchSchemas } from '@graphql-tools/stitch';
+import { ApolloServer } from 'apollo-server-lambda';
+import { stitchingDirectives } from '@graphql-tools/stitching-directives';
 
-// Construct a schema, using GraphQL schema language
-const typeDefs = gql`
-  type Block {
-    id: ID!
-    content: String
-    children: [Block]
-    page: Page!
-  }
+const { stitchingDirectivesTransformer } = stitchingDirectives();
 
-  type Page {
-    id: ID!
-    blocks: [Block]
-    slug: String!
-    snippet: Block
-  }
-
-  type Query {
-    page(id: ID!): Page
-    pages: [Page]
-
-    block(id: ID!): Block
-
-    # user...
-  }
-`;
-
-const blocks = [
-  { id: 'block-1', content: 'This is some content to render', pageId: '1' },
-];
-
-const pages = [{ id: '1', slug: 'human' }];
-
-// Provide resolver functions for your schema fields
-const resolvers = {
-  Query: {
-    page: (parent, { id }, context, info) =>
-      pages.find((page) => page.id === id),
-
-    pages: () => pages,
-    block: (_, { id }) => blocks.find((block) => block.id === id),
-  },
-  Page: {
-    blocks: ({ id }) => blocks.filter((block) => block.pageId === id),
-  },
-  Block: {
-    page: ({ pageId }) => pages.find((page) => page.id === pageId),
-  },
-};
+const schema = stitchSchemas({
+  subschemaConfigTransforms: [stitchingDirectivesTransformer],
+  subschemas: [
+    {
+      schema: pagesSchema,
+    },
+    {
+      schema: blocksSchema,
+    },
+  ],
+});
 
 const server = new ApolloServer({
-  typeDefs,
-  resolvers,
+  schema,
   formatError: (error) => {
     console.log(JSON.stringify(error, null, 2));
     return error;

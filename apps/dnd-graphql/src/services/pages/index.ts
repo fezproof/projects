@@ -1,22 +1,26 @@
-import { gql } from 'apollo-server-lambda';
+import { gql, UserInputError } from 'apollo-server-lambda';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { stitchingDirectives } from '@graphql-tools/stitching-directives';
+import { Page, Resolvers } from 'src/generated/graphql';
 
 const {
   stitchingDirectivesTypeDefs,
   stitchingDirectivesValidator,
 } = stitchingDirectives();
 
-export const pagesData = {
+export const pagesData: Record<string, Page> = {
   '12345': {
+    id: '12345',
     slug: 'jericho',
     type: 'player',
   },
   abcde: {
+    id: 'abcde',
     slug: 'whiskers',
     type: 'player',
   },
   abcdef: {
+    id: 'abcdef',
     slug: 'bridgetown',
     type: 'place',
   },
@@ -25,7 +29,9 @@ export const pagesData = {
 const typeDefs = gql`
   type Page @canonical {
     id: ID!
+    "Slug to appear in the URL for this page"
     slug: String!
+    "The page type"
     type: String!
   }
 
@@ -36,26 +42,37 @@ const typeDefs = gql`
   ${stitchingDirectivesTypeDefs}
 `;
 
-const resolvers = {
+const resolvers: Resolvers = {
   Query: {
     page: (_, { id }) => {
-      return pagesData[id] ? { id, ...pagesData[id] } : null;
+      const page = pagesData[id]
+      return !!page ? page : null;
     },
-
     pages: (_, { type }) =>
       Object.entries(pagesData)
         .filter(([, data]) => (type ? data.type === type : true))
-        .map(([id, data]) => ({ id, ...data })),
+        .map(([, data]) => data),
   },
   Page: {
     id: ({ id }) => {
-      return pagesData[id] ? id : null;
+      if (pagesData[id]) {
+        return id;
+      }
+      throw new UserInputError('Page not found');
     },
     slug: ({ id }) => {
-      return pagesData[id].slug;
+      const page = pagesData[id];
+      if (page) {
+        return page.slug;
+      }
+      throw new UserInputError('Page not found');
     },
     type: ({ id }) => {
-      return pagesData[id].type;
+      const page = pagesData[id];
+      if (page) {
+        return page.type;
+      }
+      throw new UserInputError('Page not found');
     },
   },
 };

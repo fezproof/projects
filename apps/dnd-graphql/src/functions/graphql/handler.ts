@@ -21,12 +21,12 @@ const schema = stitchSchemas({
 const server = new ApolloServer({
   schema,
   formatError: (error) => {
-    console.log(JSON.stringify(error, null, 2));
+    // console.log(JSON.stringify(error, null, 2));
     return error;
   },
   formatResponse: (response) => {
-    console.log(JSON.stringify(response, null, 2));
-    return response;
+    // console.log(JSON.stringify(response, null, 2));
+    return response ?? {};
   },
   context: ({ event, context }) => ({
     headers: event.headers,

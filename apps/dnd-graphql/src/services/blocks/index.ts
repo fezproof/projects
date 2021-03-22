@@ -1,6 +1,6 @@
-import { gql, UserInputError } from 'apollo-server-lambda';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { stitchingDirectives } from '@graphql-tools/stitching-directives';
+import { gql, UserInputError } from 'apollo-server-lambda';
 import { Resolvers, StringBlockType } from 'src/generated/graphql';
 
 const {
@@ -188,10 +188,8 @@ const resolvers: Resolvers = {
     },
   },
   Parent: {
-    __resolveType: ({ id, type }) => {
-      console.log(id, type);
-      return type === 'ParentBlock' || type === 'Page' ? type : null;
-    },
+    __resolveType: ({ type }) =>
+      type === 'ParentBlock' || type === 'Page' ? type : null,
   },
 };
 

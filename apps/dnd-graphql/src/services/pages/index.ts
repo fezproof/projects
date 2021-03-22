@@ -1,6 +1,6 @@
-import { gql, UserInputError } from 'apollo-server-lambda';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { stitchingDirectives } from '@graphql-tools/stitching-directives';
+import { gql, UserInputError } from 'apollo-server-lambda';
 import { Page, Resolvers } from 'src/generated/graphql';
 
 const {
@@ -11,17 +11,19 @@ const {
 export const pagesData: Record<string, Page> = {
   '12345': {
     id: '12345',
-    slug: 'jericho',
+    title: 'Jericho',
     type: 'player',
+    snippet: 'This is a quote from the hero Jericho',
   },
   abcde: {
     id: 'abcde',
-    slug: 'whiskers',
+    title: 'Whiskers',
     type: 'player',
+    snippet: 'This is a quote from the hero Whiskers',
   },
   abcdef: {
     id: 'abcdef',
-    slug: 'bridgetown',
+    title: 'Bridgetown',
     type: 'place',
   },
 };
@@ -29,10 +31,11 @@ export const pagesData: Record<string, Page> = {
 const typeDefs = gql`
   type Page @canonical {
     id: ID!
-    "Slug to appear in the URL for this page"
-    slug: String!
     "The page type"
     type: String!
+    title: String
+    snippet: String
+    hero: String
   }
 
   type Query {
@@ -45,7 +48,7 @@ const typeDefs = gql`
 const resolvers: Resolvers = {
   Query: {
     page: (_, { id }) => {
-      const page = pagesData[id]
+      const page = pagesData[id];
       return !!page ? page : null;
     },
     pages: (_, { type }) =>
@@ -60,12 +63,9 @@ const resolvers: Resolvers = {
       }
       throw new UserInputError('Page not found');
     },
-    slug: ({ id }) => {
+    title: ({ id }) => {
       const page = pagesData[id];
-      if (page) {
-        return page.slug;
-      }
-      throw new UserInputError('Page not found');
+      return page?.title ?? null;
     },
     type: ({ id }) => {
       const page = pagesData[id];

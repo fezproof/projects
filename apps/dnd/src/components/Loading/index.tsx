@@ -1,7 +1,7 @@
 const Loading = () => (
   <div class="flex align-middle justify-center p-4">
     <svg
-      class="animate-spin h-10 w-10 text-white"
+      class="animate-spin h-10 w-10"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"

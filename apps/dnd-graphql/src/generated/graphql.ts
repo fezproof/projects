@@ -15,45 +15,6 @@ export type Scalars = {
   Float: number;
 };
 
-export type Query = {
-  __typename?: 'Query';
-  page?: Maybe<Page>;
-  pages?: Maybe<Array<Maybe<Page>>>;
-  block?: Maybe<Block>;
-  _pages: Array<Maybe<Page>>;
-};
-
-
-export type QueryPageArgs = {
-  id: Scalars['ID'];
-};
-
-
-export type QueryPagesArgs = {
-  type?: Maybe<Scalars['String']>;
-};
-
-
-export type QueryBlockArgs = {
-  id: Scalars['ID'];
-};
-
-
-export type Query_PagesArgs = {
-  keys: Array<PageKey>;
-};
-
-export type Page = {
-  __typename?: 'Page';
-  id: Scalars['ID'];
-  /** Blocks for this page */
-  blocks?: Maybe<Array<Maybe<Block>>>;
-  /** Slug to appear in the URL for this page */
-  slug: Scalars['String'];
-  /** The page type */
-  type: Scalars['String'];
-};
-
 export type Parent = Page | ParentBlock;
 
 export type Block = {
@@ -87,8 +48,48 @@ export type ParentBlock = Block & {
   children: Array<Maybe<Block>>;
 };
 
+export type Page = {
+  __typename?: 'Page';
+  /** Blocks for this page */
+  blocks?: Maybe<Array<Maybe<Block>>>;
+  hero?: Maybe<Scalars['String']>;
+  id: Scalars['ID'];
+  snippet?: Maybe<Scalars['String']>;
+  title?: Maybe<Scalars['String']>;
+  /** The page type */
+  type: Scalars['String'];
+};
+
 export type PageKey = {
   id: Scalars['ID'];
+};
+
+export type Query = {
+  __typename?: 'Query';
+  _pages: Array<Maybe<Page>>;
+  block?: Maybe<Block>;
+  page?: Maybe<Page>;
+  pages?: Maybe<Array<Maybe<Page>>>;
+};
+
+
+export type Query_PagesArgs = {
+  keys: Array<PageKey>;
+};
+
+
+export type QueryBlockArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type QueryPageArgs = {
+  id: Scalars['ID'];
+};
+
+
+export type QueryPagesArgs = {
+  type?: Maybe<Scalars['String']>;
 };
 
 export type WithIndex<TObject> = TObject & Record<string, any>;
@@ -170,46 +171,31 @@ export type DirectiveResolverFn<TResult = {}, TParent = {}, TContext = {}, TArgs
 
 /** Mapping between all available schema types and the resolvers types */
 export type ResolversTypes = ResolversObject<{
-  Query: ResolverTypeWrapper<{}>;
-  ID: ResolverTypeWrapper<Scalars['ID']>;
-  String: ResolverTypeWrapper<Scalars['String']>;
-  Page: ResolverTypeWrapper<IDType>;
   Parent: ResolverTypeWrapper<ParentType>;
   Block: ResolverTypeWrapper<IDType>;
+  ID: ResolverTypeWrapper<Scalars['ID']>;
   StringBlockType: StringBlockType;
   StringBlock: ResolverTypeWrapper<Omit<StringBlock, 'parent'> & { parent: ResolversTypes['Parent'] }>;
+  String: ResolverTypeWrapper<Scalars['String']>;
   ParentBlock: ResolverTypeWrapper<Omit<ParentBlock, 'parent' | 'children'> & { parent: ResolversTypes['Parent'], children: Array<Maybe<ResolversTypes['Block']>> }>;
+  Page: ResolverTypeWrapper<IDType>;
   PageKey: PageKey;
+  Query: ResolverTypeWrapper<{}>;
   Boolean: ResolverTypeWrapper<Scalars['Boolean']>;
 }>;
 
 /** Mapping between all available schema types and the resolvers parents */
 export type ResolversParentTypes = ResolversObject<{
-  Query: {};
-  ID: Scalars['ID'];
-  String: Scalars['String'];
-  Page: IDType;
   Parent: ParentType;
   Block: IDType;
+  ID: Scalars['ID'];
   StringBlock: Omit<StringBlock, 'parent'> & { parent: ResolversParentTypes['Parent'] };
+  String: Scalars['String'];
   ParentBlock: Omit<ParentBlock, 'parent' | 'children'> & { parent: ResolversParentTypes['Parent'], children: Array<Maybe<ResolversParentTypes['Block']>> };
+  Page: IDType;
   PageKey: PageKey;
+  Query: {};
   Boolean: Scalars['Boolean'];
-}>;
-
-export type QueryResolvers<ContextType = any, ParentType = ResolversParentTypes['Query']> = ResolversObject<{
-  page?: Resolver<Maybe<ResolversTypes['Page']>, ParentType, ContextType, RequireFields<QueryPageArgs, 'id'>>;
-  pages?: Resolver<Maybe<Array<Maybe<ResolversTypes['Page']>>>, ParentType, ContextType, RequireFields<QueryPagesArgs, never>>;
-  block?: Resolver<Maybe<ResolversTypes['Block']>, ParentType, ContextType, RequireFields<QueryBlockArgs, 'id'>>;
-  _pages?: Resolver<Array<Maybe<ResolversTypes['Page']>>, ParentType, ContextType, RequireFields<Query_PagesArgs, 'keys'>>;
-}>;
-
-export type PageResolvers<ContextType = any, ParentType = ResolversParentTypes['Page']> = ResolversObject<{
-  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
-  blocks?: Resolver<Maybe<Array<Maybe<ResolversTypes['Block']>>>, ParentType, ContextType>;
-  slug?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  type?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 }>;
 
 export type ParentResolvers<ContextType = any, ParentType = ResolversParentTypes['Parent']> = ResolversObject<{
@@ -237,13 +223,30 @@ export type ParentBlockResolvers<ContextType = any, ParentType = ResolversParent
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 }>;
 
+export type PageResolvers<ContextType = any, ParentType = ResolversParentTypes['Page']> = ResolversObject<{
+  blocks?: Resolver<Maybe<Array<Maybe<ResolversTypes['Block']>>>, ParentType, ContextType>;
+  hero?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  snippet?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  title?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  type?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+}>;
+
+export type QueryResolvers<ContextType = any, ParentType = ResolversParentTypes['Query']> = ResolversObject<{
+  _pages?: Resolver<Array<Maybe<ResolversTypes['Page']>>, ParentType, ContextType, RequireFields<Query_PagesArgs, 'keys'>>;
+  block?: Resolver<Maybe<ResolversTypes['Block']>, ParentType, ContextType, RequireFields<QueryBlockArgs, 'id'>>;
+  page?: Resolver<Maybe<ResolversTypes['Page']>, ParentType, ContextType, RequireFields<QueryPageArgs, 'id'>>;
+  pages?: Resolver<Maybe<Array<Maybe<ResolversTypes['Page']>>>, ParentType, ContextType, RequireFields<QueryPagesArgs, never>>;
+}>;
+
 export type Resolvers<ContextType = any> = ResolversObject<{
-  Query?: QueryResolvers<ContextType>;
-  Page?: PageResolvers<ContextType>;
   Parent?: ParentResolvers<ContextType>;
   Block?: BlockResolvers<ContextType>;
   StringBlock?: StringBlockResolvers<ContextType>;
   ParentBlock?: ParentBlockResolvers<ContextType>;
+  Page?: PageResolvers<ContextType>;
+  Query?: QueryResolvers<ContextType>;
 }>;
 
 

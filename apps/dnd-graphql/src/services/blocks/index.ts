@@ -37,13 +37,13 @@ const blocksData: Record<string, StringBlockStore | ParentBlockStore> = {
   'string-block': {
     id: 'string-block',
     parentId: 'ParentBlock|block-1234',
-    content: 'Hi I am some content',
+    content: `Irony direct trade wayfarers, ugh beard poke blog kitsch lo-fi +1 twee slow-carb scenester. Kogi chillwave lumbersexual tacos pickled shaman godard mumblecore next level you probably haven't heard of them austin farm-to-table fingerstache. Jean shorts chia whatever deep v, vaporware artisan farm-to-table taxidermy quinoa vice next level. Single-origin coffee tumblr letterpress green juice forage plaid stumptown you probably haven't heard of them organic food truck vaporware williamsburg kickstarter. Meggings trust fund pickled austin taxidermy knausgaard. Helvetica occupy biodiesel, williamsburg health goth organic lomo bicycle rights intelligentsia kitsch meh. Gentrify live-edge hammock, literally intelligentsia enamel pin scenester waistcoat occupy adaptogen austin knausgaard four dollar toast drinking vinegar pickled.`,
     type: StringBlockType.Paragraph,
   },
   'sub-block': {
     id: 'sub-block',
     parentId: 'ParentBlock|block-1234',
-    content: 'This is a quote',
+    content: `Marfa vexillologist knausgaard gentrify meh literally plaid air plant forage fanny pack. Hexagon photo booth fashion axe hammock master cleanse crucifix. Butcher cred jean shorts PBR&B swag fingerstache. Vape air plant pabst, prism artisan actually fingerstache knausgaard raclette neutra. Church-key everyday carry dreamcatcher pour-over scenester. Skateboard wayfarers quinoa, sustainable ugh hammock hexagon hoodie brooklyn echo park meh normcore. Next level selvage yr quinoa crucifix af, gluten-free meditation ethical freegan cred godard polaroid.`,
     type: StringBlockType.Quote,
   },
 };

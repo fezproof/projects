@@ -5,7 +5,9 @@ const isRunningLocally = !process.env.AWS_EXECUTION_ENV;
 import graphql from '@functions/graphql';
 
 const serverlessConfiguration: AWS = {
-  service: 'dnd-graphql',
+  org: 'fezproof',
+  app: 'dnd',
+  service: 'graphql-gateway',
   frameworkVersion: '2',
   custom: {
     webpack: {
@@ -23,6 +25,7 @@ const serverlessConfiguration: AWS = {
   provider: {
     name: 'aws',
     runtime: isRunningLocally ? 'nodejs12.x' : 'nodejs14.x',
+    region: 'ap-southeast-2',
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,

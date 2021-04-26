@@ -91,6 +91,56 @@ export type PageKey = {
   id: Scalars['ID'];
 };
 
+export type ParentBlockChildrenQueryVariables = Exact<{
+  id: Scalars['ID'];
+}>;
+
+
+export type ParentBlockChildrenQuery = (
+  { __typename?: 'Query' }
+  & { block?: Maybe<{ __typename?: 'StringBlock' } | (
+    { __typename?: 'ParentBlock' }
+    & Pick<ParentBlock, 'id'>
+    & { children: Array<Maybe<(
+      { __typename?: 'StringBlock' }
+      & BlockBase_StringBlock_Fragment
+    ) | (
+      { __typename?: 'ParentBlock' }
+      & BlockBase_ParentBlock_Fragment
+    )>> }
+  )> }
+);
+
+export type ParentBlockBaseFragment = (
+  { __typename: 'ParentBlock' }
+  & Pick<ParentBlock, 'id'>
+  & { children: Array<Maybe<(
+    { __typename: 'StringBlock' }
+    & Pick<StringBlock, 'id'>
+  ) | (
+    { __typename: 'ParentBlock' }
+    & Pick<ParentBlock, 'id'>
+  )>> }
+);
+
+type BlockBase_StringBlock_Fragment = (
+  { __typename: 'StringBlock' }
+  & Pick<StringBlock, 'content' | 'type' | 'id'>
+);
+
+type BlockBase_ParentBlock_Fragment = (
+  { __typename: 'ParentBlock' }
+  & Pick<ParentBlock, 'id'>
+  & ParentBlockBaseFragment
+);
+
+export type BlockBaseFragment = BlockBase_StringBlock_Fragment | BlockBase_ParentBlock_Fragment;
+
+export type StringBlockBaseFragment = (
+  { __typename: 'StringBlock' }
+  & Pick<StringBlock, 'id' | 'content' | 'type'>
+);
+
 export type PlayerCardFragment = (
   { __typename?: 'Page' }
   & Pick<Page, 'id' | 'title' | 'snippet' | 'hero'>
@@ -116,10 +166,48 @@ export type PlayerPageQuery = (
   { __typename?: 'Query' }
   & { page?: Maybe<(
     { __typename?: 'Page' }
-    & Pick<Page, 'id' | 'title'>
+    & Pick<Page, 'id' | 'title' | 'snippet'>
+    & { blocks?: Maybe<Array<Maybe<(
+      { __typename?: 'StringBlock' }
+      & BlockBase_StringBlock_Fragment
+    ) | (
+      { __typename?: 'ParentBlock' }
+      & BlockBase_ParentBlock_Fragment
+    )>>> }
   )> }
 );
 
+export const ParentBlockBaseFragmentDoc = gql`
+    fragment ParentBlockBase on ParentBlock {
+  id
+  __typename
+  children {
+    id
+    __typename
+  }
+}
+    `;
+export const BlockBaseFragmentDoc = gql`
+    fragment BlockBase on Block {
+  id
+  __typename
+  ... on ParentBlock {
+    ...ParentBlockBase
+  }
+  ... on StringBlock {
+    content
+    type
+  }
+}
+    ${ParentBlockBaseFragmentDoc}`;
+export const StringBlockBaseFragmentDoc = gql`
+    fragment StringBlockBase on StringBlock {
+  id
+  __typename
+  content
+  type
+}
+    `;
 export const PlayerCardFragmentDoc = gql`
     fragment PlayerCard on Page {
   id
@@ -128,6 +216,22 @@ export const PlayerCardFragmentDoc = gql`
   hero
 }
     `;
+export const ParentBlockChildrenDocument = gql`
+    query ParentBlockChildren($id: ID!) {
+  block(id: $id) {
+    ... on ParentBlock {
+      id
+      children {
+        ...BlockBase
+      }
+    }
+  }
+}
+    ${BlockBaseFragmentDoc}`;
+
+export function useParentBlockChildrenQuery(options: Omit<Urql.UseQueryArgs<ParentBlockChildrenQueryVariables>, 'query'> = {}) {
+  return Urql.useQuery<ParentBlockChildrenQuery>({ query: ParentBlockChildrenDocument, ...options });
+};
 export const PlayerPagesDocument = gql`
     query playerPages {
   pages(type: "player") {
@@ -144,9 +248,13 @@ export const PlayerPageDocument = gql`
   page(id: $id) {
     id
     title
+    snippet
+    blocks {
+      ...BlockBase
+    }
   }
 }
-    `;
+    ${BlockBaseFragmentDoc}`;
 
 export function usePlayerPageQuery(options: Omit<Urql.UseQueryArgs<PlayerPageQueryVariables>, 'query'> = {}) {
   return Urql.useQuery<PlayerPageQuery>({ query: PlayerPageDocument, ...options });

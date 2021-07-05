@@ -1,4 +1,6 @@
+# ********************************************************************************
 # uniST definitions
+# ********************************************************************************
 
 interface UnistData {
   # empty interface
@@ -37,36 +39,38 @@ interface UnistLiteral implements UnistNode {
   position: UnistPosition
 }
 
+# ********************************************************************************
 # mdAST definitions
+# ********************************************************************************
 
-interface Resource {
+interface MdastResource {
   url: String!
   title: String
 }
 
-interface Association {
+interface MdastAssociation {
   identifier: String!
   label: String
 }
 
-enum ReferenceType {
+enum MdastReferenceType {
   shortcut
   collapsed
   full
 }
 
-interface Reference implements Association {
+interface Reference implements MdastAssociation {
   identifier: String!
   label: String
 
-  referenceType: ReferenceType!
+  referenceType: MdastReferenceType!
 }
 
-interface Alternative {
+interface MdastAlternative {
   alt: String
 }
 
-union StaticPhrasingContent =
+union MdastStaticPhrasingContent =
     Break
   | Emphasis
   | HTML
@@ -76,7 +80,7 @@ union StaticPhrasingContent =
   | Strong
   | Text
 
-union PhrasingContent =
+union MdastPhrasingContent =
     Link
   | LinkReference
   | Break
@@ -88,11 +92,12 @@ union PhrasingContent =
   | Strong
   | Text
 
-union ListContent = ListItem
+union MdastListContent = ListItem
 
-union Content = Definition | Paragraph
+union MdastContent = Definition | Paragraph
 
-union FlowContent =
+"type MdastFlowContent = Blockquote | Code | Heading | HTML | List | ThematicBreak | Content"
+union MdastFlowContent =
     Blockquote
   | Code
   | Heading
@@ -102,7 +107,8 @@ union FlowContent =
   | Definition
   | Paragraph
 
-union MdastContent =
+"type MdastAllContent = MdastFlowContent | MdastListContent | MdastPhrasingContent"
+union MdastAllContent =
     Blockquote
   | Code
   | Heading
@@ -126,7 +132,7 @@ union MdastContent =
 The transparent content model is derived from the content model of its parent.
 Effectively, this is used to prohibit nested links (and link references).
 """
-union TransparentContent =
+union MdastTransparentContent =
     Blockquote
   | Code
   | Heading
@@ -146,12 +152,12 @@ union TransparentContent =
   | Strong
   | Text
 
-interface Parent implements UnistParent & UnistNode {
+interface MdastParent implements UnistParent & UnistNode {
   type: String!
   data: UnistData
   position: UnistPosition
 
-  # children: [MdastContent!]!
+  # children: [MdastAllContent!]!
 }
 
 interface Literal implements UnistLiteral & UnistNode {
@@ -164,28 +170,28 @@ interface Literal implements UnistLiteral & UnistNode {
 """
 Root can be used as the root of a tree, never as a child. Its content model is not limited to flow content, but can contain any mdast content with the restriction that all content must be of the same category.
 """
-type Root implements Parent & UnistParent & UnistNode {
+type Root implements MdastParent & UnistParent & UnistNode {
   "Always will equal 'root'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [MdastContent!]!
+  children: [MdastAllContent!]!
 }
 
-type Paragraph implements Parent & UnistParent & UnistNode {
+type Paragraph implements MdastParent & UnistParent & UnistNode {
   "Always will equal 'paragraph'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [PhrasingContent!]!
+  children: [MdastPhrasingContent!]!
 }
 
-type Heading implements Parent & UnistParent & UnistNode {
+type Heading implements MdastParent & UnistParent & UnistNode {
   "Always will equal 'heading'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [PhrasingContent!]!
+  children: [MdastPhrasingContent!]!
 
   """
   A depth field must be present.
@@ -201,20 +207,20 @@ type ThematicBreak implements UnistNode {
   position: UnistPosition
 }
 
-type Blockquote implements Parent & UnistParent & UnistNode {
+type Blockquote implements MdastParent & UnistParent & UnistNode {
   "Always will equal 'blockQuote'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [FlowContent!]!
+  children: [MdastFlowContent!]!
 }
 
-type List implements Parent & UnistParent & UnistNode {
+type List implements MdastParent & UnistParent & UnistNode {
   "Always will equal 'list'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [ListContent!]!
+  children: [MdastListContent!]!
 
   """
   An ordered field can be present.
@@ -233,12 +239,12 @@ type List implements Parent & UnistParent & UnistNode {
   spread: Boolean
 }
 
-type ListItem implements Parent & UnistParent & UnistNode {
+type ListItem implements MdastParent & UnistParent & UnistNode {
   "Always will equal 'listItem'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [FlowContent!]!
+  children: [MdastFlowContent!]!
 
   """
   A spread field can be present.
@@ -274,7 +280,7 @@ type Code implements Literal & UnistLiteral & UnistNode {
   meta: String
 }
 
-type Definition implements UnistNode & Association & Resource {
+type Definition implements UnistNode & MdastAssociation & MdastResource {
   "Always will equal 'definition'"
   type: String!
   data: UnistData
@@ -295,20 +301,20 @@ type Text implements Literal & UnistLiteral & UnistNode {
   value: String!
 }
 
-type Emphasis implements Parent & UnistParent & UnistNode {
+type Emphasis implements MdastParent & UnistParent & UnistNode {
   "Always will equal 'emphasis'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [TransparentContent!]!
+  children: [MdastTransparentContent!]!
 }
 
-type Strong implements Parent & UnistParent & UnistNode {
+type Strong implements MdastParent & UnistParent & UnistNode {
   "Always will equal 'strong'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [TransparentContent!]!
+  children: [MdastTransparentContent!]!
 }
 
 type InlineCode implements Literal & UnistLiteral & UnistNode {
@@ -326,17 +332,17 @@ type Break implements UnistNode {
   position: UnistPosition
 }
 
-type Link implements Parent & UnistParent & UnistNode & Resource {
+type Link implements MdastParent & UnistParent & UnistNode & MdastResource {
   "Always will equal 'link'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [StaticPhrasingContent!]!
+  children: [MdastStaticPhrasingContent!]!
   url: String!
   title: String
 }
 
-type Image implements UnistNode & Resource & Alternative {
+type Image implements UnistNode & MdastResource & MdastAlternative {
   "Always will equal 'image'"
   type: String!
   data: UnistData
@@ -346,29 +352,31 @@ type Image implements UnistNode & Resource & Alternative {
   alt: String
 }
 
-type LinkReference implements Parent & UnistParent & UnistNode & Reference & Association {
+type LinkReference implements MdastParent & UnistParent & UnistNode & Reference & MdastAssociation {
   "Always will equal 'linkReference'"
   type: String!
   data: UnistData
   position: UnistPosition
-  children: [StaticPhrasingContent!]!
+  children: [MdastStaticPhrasingContent!]!
   identifier: String!
   label: String
-  referenceType: ReferenceType!
+  referenceType: MdastReferenceType!
 }
 
-type ImageReference implements UnistNode & Reference & Association & Alternative {
+type ImageReference implements UnistNode & Reference & MdastAssociation & MdastAlternative {
   "Always will equal 'imageReference'"
   type: String!
   data: UnistData
   position: UnistPosition
   identifier: String!
   label: String
-  referenceType: ReferenceType!
+  referenceType: MdastReferenceType!
   alt: String
 }
 
+# ********************************************************************************
 # base types
+# ********************************************************************************
 
 type Query {
   markdown: Root

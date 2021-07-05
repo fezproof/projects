@@ -1,0 +1,375 @@
+# uniST definitions
+
+interface UnistData {
+  # empty interface
+  id: ID
+}
+
+interface UnistPoint {
+  line: Int!
+  column: Int!
+  offset: Int
+}
+
+interface UnistPosition {
+  start: UnistPoint!
+  end: UnistPoint!
+  indent: Int
+}
+
+interface UnistNode {
+  type: String!
+  data: UnistData
+  position: UnistPosition
+}
+
+interface UnistParent implements UnistNode {
+  type: String!
+  data: UnistData
+  position: UnistPosition
+
+  # children: [UnistNode!]!
+}
+
+interface UnistLiteral implements UnistNode {
+  type: String!
+  data: UnistData
+  position: UnistPosition
+}
+
+# mdAST definitions
+
+interface Resource {
+  url: String!
+  title: String
+}
+
+interface Association {
+  identifier: String!
+  label: String
+}
+
+enum ReferenceType {
+  shortcut
+  collapsed
+  full
+}
+
+interface Reference implements Association {
+  identifier: String!
+  label: String
+
+  referenceType: ReferenceType!
+}
+
+interface Alternative {
+  alt: String
+}
+
+union StaticPhrasingContent =
+    Break
+  | Emphasis
+  | HTML
+  | Image
+  | ImageReference
+  | InlineCode
+  | Strong
+  | Text
+
+union PhrasingContent =
+    Link
+  | LinkReference
+  | Break
+  | Emphasis
+  | HTML
+  | Image
+  | ImageReference
+  | InlineCode
+  | Strong
+  | Text
+
+union ListContent = ListItem
+
+union Content = Definition | Paragraph
+
+union FlowContent =
+    Blockquote
+  | Code
+  | Heading
+  | HTML
+  | List
+  | ThematicBreak
+  | Definition
+  | Paragraph
+
+union MdastContent =
+    Blockquote
+  | Code
+  | Heading
+  | List
+  | ThematicBreak
+  | Definition
+  | Paragraph
+  | ListItem
+  | Link
+  | LinkReference
+  | Break
+  | Emphasis
+  | HTML
+  | Image
+  | ImageReference
+  | InlineCode
+  | Strong
+  | Text
+
+"""
+The transparent content model is derived from the content model of its parent.
+Effectively, this is used to prohibit nested links (and link references).
+"""
+union TransparentContent =
+    Blockquote
+  | Code
+  | Heading
+  | List
+  | ThematicBreak
+  | Definition
+  | Paragraph
+  | ListItem
+  | Link
+  | LinkReference
+  | Break
+  | Emphasis
+  | HTML
+  | Image
+  | ImageReference
+  | InlineCode
+  | Strong
+  | Text
+
+interface Parent implements UnistParent & UnistNode {
+  type: String!
+  data: UnistData
+  position: UnistPosition
+
+  # children: [MdastContent!]!
+}
+
+interface Literal implements UnistLiteral & UnistNode {
+  type: String!
+  data: UnistData
+  position: UnistPosition
+
+  value: String!
+}
+"""
+Root can be used as the root of a tree, never as a child. Its content model is not limited to flow content, but can contain any mdast content with the restriction that all content must be of the same category.
+"""
+type Root implements Parent & UnistParent & UnistNode {
+  "Always will equal 'root'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [MdastContent!]!
+}
+
+type Paragraph implements Parent & UnistParent & UnistNode {
+  "Always will equal 'paragraph'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [PhrasingContent!]!
+}
+
+type Heading implements Parent & UnistParent & UnistNode {
+  "Always will equal 'heading'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [PhrasingContent!]!
+
+  """
+  A depth field must be present.
+  A value of 1 is said to be the highest rank and 6 the lowest.
+  """
+  depth: Int!
+}
+
+type ThematicBreak implements UnistNode {
+  "Always equals thematicBreak"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+}
+
+type Blockquote implements Parent & UnistParent & UnistNode {
+  "Always will equal 'blockQuote'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [FlowContent!]!
+}
+
+type List implements Parent & UnistParent & UnistNode {
+  "Always will equal 'list'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [ListContent!]!
+
+  """
+  An ordered field can be present.
+  It represents that the items have been intentionally ordered (when true), or that the order of items is not important (when false or not present).
+  """
+  ordered: Boolean
+  """
+  A start field can be present.
+  It represents, when the ordered field is true, the starting number of the list.
+  """
+  start: Int
+  """
+  A spread field can be present.
+  It represents that one or more of its children are separated with a blank line from its siblings (when true), or not (when false or not present).
+  """
+  spread: Boolean
+}
+
+type ListItem implements Parent & UnistParent & UnistNode {
+  "Always will equal 'listItem'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [FlowContent!]!
+
+  """
+  A spread field can be present.
+  It represents that the item contains two or more children separated by a blank line (when true), or not (when false or not present).
+  """
+  spread: Boolean
+}
+
+type HTML implements Literal & UnistLiteral & UnistNode {
+  "Always will equal 'html'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  value: String!
+}
+
+type Code implements Literal & UnistLiteral & UnistNode {
+  "Always will equal 'code'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  value: String!
+
+  """
+  A lang field can be present.
+  It represents the language of computer code being marked up.
+  """
+  lang: String
+  """
+  If the lang field is present, a meta field can be present.
+  It represents custom information relating to the node.
+  """
+  meta: String
+}
+
+type Definition implements UnistNode & Association & Resource {
+  "Always will equal 'definition'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+
+  identifier: String!
+  label: String
+
+  url: String!
+  title: String
+}
+
+type Text implements Literal & UnistLiteral & UnistNode {
+  "Always will equal 'text'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  value: String!
+}
+
+type Emphasis implements Parent & UnistParent & UnistNode {
+  "Always will equal 'emphasis'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [TransparentContent!]!
+}
+
+type Strong implements Parent & UnistParent & UnistNode {
+  "Always will equal 'strong'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [TransparentContent!]!
+}
+
+type InlineCode implements Literal & UnistLiteral & UnistNode {
+  "Always will equal 'inlineCode'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  value: String!
+}
+
+type Break implements UnistNode {
+  "Always will equal 'break'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+}
+
+type Link implements Parent & UnistParent & UnistNode & Resource {
+  "Always will equal 'link'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [StaticPhrasingContent!]!
+  url: String!
+  title: String
+}
+
+type Image implements UnistNode & Resource & Alternative {
+  "Always will equal 'image'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  url: String!
+  title: String
+  alt: String
+}
+
+type LinkReference implements Parent & UnistParent & UnistNode & Reference & Association {
+  "Always will equal 'linkReference'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  children: [StaticPhrasingContent!]!
+  identifier: String!
+  label: String
+  referenceType: ReferenceType!
+}
+
+type ImageReference implements UnistNode & Reference & Association & Alternative {
+  "Always will equal 'imageReference'"
+  type: String!
+  data: UnistData
+  position: UnistPosition
+  identifier: String!
+  label: String
+  referenceType: ReferenceType!
+  alt: String
+}
+
+# base types
+
+type Query {
+  markdown: Root
+}

@@ -42,7 +42,7 @@ const ParentBlock: FunctionalComponent<ParentBlockProps> = ({ block }) => {
 
   if (data?.block?.__typename === 'ParentBlock')
     return (
-      <div class="grid grid-flow-row gap-8 md:grid-flow-col">
+      <div class="grid grid-flow-row gap-8 mb-4 md:grid-flow-col">
         {data?.block?.children.map((child) =>
           child ? <Block block={child} /> : null,
         )}

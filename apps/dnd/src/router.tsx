@@ -25,8 +25,8 @@ const pages = Object.entries(pageModules)
       return b.depth - a.depth;
     }
 
-    var nameA = a.route.toUpperCase(); // ignore upper and lowercase
-    var nameB = b.route.toUpperCase(); // ignore upper and lowercase
+    const nameA = a.route.toUpperCase(); // ignore upper and lowercase
+    const nameB = b.route.toUpperCase(); // ignore upper and lowercase
     if (nameA < nameB) {
       return 1;
     }

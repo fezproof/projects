@@ -45,22 +45,22 @@ const PlayerPage: FunctionComponent = () => {
 
   return (
     <>
-      <nav class="fixed top-0 left-0 right-0 text-warmGray-50 z-10">
+      <nav class="fixed top-0 left-0 right-0 z-10">
         {/* transparent nav */}
         {/* This is the nav */}
       </nav>
-      <header class="h-5/6 bg-gray-900 flex flex-col lg:flex-row">
+      <header class="container mx-auto h-screen lg:h-5/6 flex flex-col lg:flex-row">
         <div class="flex justify-center items-center flex-grow">
           <div class="relative h-full w-full">
             <img
               src={JerichoImg}
               class="absolute inset-0 h-full w-full object-top object-cover"
             />
-            <div class="absolute inset-0 bg-gradient-to-b from-gray-900 via-transparent to-gray-900"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-transparent to-gray-900"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-skin-fill via-transparent to-skin-fill"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-skin-fill via-transparent to-skin-fill"></div>
           </div>
         </div>
-        <div class="text-warmGray-50 p-8 flex flex-col justify-center">
+        <div class="p-8 flex flex-col justify-center">
           <h1 class="font-bold text-7xl font-serif mb-4">
             {data?.page?.title}
           </h1>
@@ -69,7 +69,7 @@ const PlayerPage: FunctionComponent = () => {
           </blockquote>
         </div>
       </header>
-      <main class="container mx-auto p-8">
+      <main class="max-w-5xl mx-auto p-8">
         {data?.page?.blocks?.map((block) => {
           if (block) return <Block block={block} />;
           return null;

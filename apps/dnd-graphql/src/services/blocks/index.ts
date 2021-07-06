@@ -34,6 +34,12 @@ const blocksData: Record<string, StringBlockStore | ParentBlockStore> = {
     parentId: 'Page|12345',
     children: [{ id: 'string-block' }, { id: 'sub-block' }],
   },
+  'p-block': {
+    id: 'p-block',
+    parentId: 'Page|12345',
+    content: 'Hi I am the paragraph',
+    type: StringBlockType.H2,
+  },
   'string-block': {
     id: 'string-block',
     parentId: 'ParentBlock|block-1234',

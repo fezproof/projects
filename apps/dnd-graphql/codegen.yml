@@ -1,0 +1,17 @@
+schema: 
+  - "src/**/*.{ts,tsx}":
+      noRequire: true
+
+watch: "src/**/*.{ts,tsx}"
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+    config:
+      allowParentTypeOverride: true
+      useIndexSignature: true
+      mappers:
+        Block: ../libs/baseTypes#IDType
+        Page: ../libs/baseTypes#IDType
+        Parent: ../libs/baseTypes#ParentType

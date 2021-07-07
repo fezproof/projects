@@ -1,3 +1,5 @@
 {
-  "name": "components"
+  "private": true,
+  "name": "components",
+  "version": "0.0.0"
 }

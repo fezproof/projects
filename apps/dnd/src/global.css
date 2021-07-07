@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: QuadraatOffcPro Demibold;
+  src: url(./fonts/QuadraatOffcPro-Demibold.woff2);
+}
+
+@font-face {
+  font-family: QuadraatOffcPro;
+  src: url(./fonts/QuadraatOffcPro.woff2);
+}
+
+@layer base {
+  :root {
+    --colour-text-base: 250, 250, 249;
+    --colour-text-muted: 227, 227, 227;
+    --colour-text-inverted: 31, 31, 31;
+
+    --colour-fill: 28, 25, 23;
+    --colour-button-accent: 31, 31, 31;
+    --colour-button-accent-hover: 31, 31, 31;
+    --colour-button-muted: 31, 31, 31;
+  }
+}
